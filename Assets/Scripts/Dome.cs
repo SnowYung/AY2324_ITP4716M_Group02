@@ -7,7 +7,7 @@ public class Dome : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Testing 123");
     }
 
     // Update is called once per frame
