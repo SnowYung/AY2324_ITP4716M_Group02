@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoorControll : MonoBehaviour
 {
+
     private Animator anim;
 
     void Start()
@@ -19,7 +20,7 @@ public class DoorControll : MonoBehaviour
         }
     }
 
-    private  void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
