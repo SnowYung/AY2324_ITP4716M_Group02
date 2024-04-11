@@ -26632,8 +26632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856986542}
   m_LocalRotation: {x: -0, y: -0.42248237, z: -0, w: 0.9063712}
-  m_LocalPosition: {x: -40.1, y: 1, z: 20.2}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: -36.4, y: 1, z: 17.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1856553356}
   m_Father: {fileID: 0}
@@ -31169,6 +31169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5852667034573049150}
+  - component: {fileID: 479565846108653779}
   m_Layer: 0
   m_Name: bed_1
   m_TagString: Untagged
@@ -31176,6 +31177,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!135 &479565846108653779
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479565846108653778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &488720734902879644
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31593,6 +31607,7 @@ GameObject:
   - component: {fileID: 2009185991684053789}
   - component: {fileID: 3192431559941280952}
   - component: {fileID: 840269734059122802}
+  - component: {fileID: 1200702634339893672}
   m_Layer: 0
   m_Name: Bed_1_size_02
   m_TagString: Untagged
@@ -31600,6 +31615,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &1200702634339893672
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200702634339893671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1210318235956083408
 Transform:
   m_ObjectHideFlags: 0
@@ -31695,6 +31723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521786427956853855}
+  - component: {fileID: 1471167602205785665}
   m_Layer: 0
   m_Name: bed_2
   m_TagString: Untagged
@@ -31702,6 +31731,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!135 &1471167602205785665
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471167602205785664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1494901995221041531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33450,6 +33492,7 @@ GameObject:
   - component: {fileID: 3631969295855864473}
   - component: {fileID: 416727283488933180}
   - component: {fileID: 2462470675290567158}
+  - component: {fileID: 4119817810130833444}
   m_Layer: 0
   m_Name: Bed_1_size_02 4
   m_TagString: Untagged
@@ -33457,6 +33500,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &4119817810130833444
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4119817810130833443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &4137588182369017508
 Transform:
   m_ObjectHideFlags: 0
@@ -33514,6 +33570,7 @@ GameObject:
   - component: {fileID: 3534295018936101284}
   - component: {fileID: 478381073899808257}
   - component: {fileID: 2398019762077668043}
+  - component: {fileID: 4199472737685484319}
   m_Layer: 0
   m_Name: Bed_1_size_03 2
   m_TagString: Untagged
@@ -33521,6 +33578,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &4199472737685484319
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199472737685484318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &4229832524638393944
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -34060,6 +34130,7 @@ GameObject:
   - component: {fileID: 5329185450325497578}
   - component: {fileID: 9104812229716072783}
   - component: {fileID: 6466673400458456453}
+  - component: {fileID: 4809493941665958993}
   m_Layer: 0
   m_Name: Bed_1_size_01 4
   m_TagString: Untagged
@@ -34067,6 +34138,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &4809493941665958993
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809493941665958992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &4867340867448455608
 Transform:
   m_ObjectHideFlags: 0
@@ -34904,6 +34988,7 @@ GameObject:
   - component: {fileID: 4971573850497867657}
   - component: {fileID: 8309510227968184364}
   - component: {fileID: 6103988070134326502}
+  - component: {fileID: 5743572487165936948}
   m_Layer: 0
   m_Name: Bed_1_size_01 2
   m_TagString: Untagged
@@ -34911,6 +34996,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &5743572487165936948
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743572487165936947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &5747470463176006794
 Transform:
   m_ObjectHideFlags: 0
@@ -35697,6 +35795,7 @@ GameObject:
   - component: {fileID: 6049874985382472123}
   - component: {fileID: 7231271009590011422}
   - component: {fileID: 4881433477198746324}
+  - component: {fileID: 6394734966609949442}
   m_Layer: 0
   m_Name: Bed_1_size_02 1
   m_TagString: Untagged
@@ -35704,6 +35803,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &6394734966609949442
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394734966609949441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &6466673400458456453
 MeshRenderer:
   m_ObjectHideFlags: 0
