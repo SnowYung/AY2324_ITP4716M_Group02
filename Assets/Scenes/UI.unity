@@ -1972,6 +1972,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSos:
   - {fileID: 11400000, guid: 8de53a2a73ad18b4a929dfe3e3d0a271, type: 2}
+  - {fileID: 11400000, guid: 85293f1bce3b888429b74ea5ebdc09ce, type: 2}
+  - {fileID: 11400000, guid: cae54c8b8edf09c44a3b5ed644dfb6dc, type: 2}
+  - {fileID: 11400000, guid: 5c0a182e331c1144d9ecdd124ac549cb, type: 2}
   dialogueManager: {fileID: 1733605343}
 --- !u!4 &1404131092
 Transform:
