@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24aca12a3bec97c4797dc9b5c1b567c6, type: 3}
   m_Name: 4th
   m_EditorClassIdentifier: 
-  englishDialogue: 
-  chineseDialogue: 
+  englishDialogue: Now please pick up your weapons and fight against the monsters!
+    ! ! ! ! !
+  chineseDialogue: "\u73FE\u5728\u8ACB\u4F60\u62FF\u8D77\u4F60\u7684\u6B66\u5668\u8207\u602A\u7269\u5C0D\u6230\u5427\uFF01\uFF01\uFF01\uFF01\uFF01\uFF01"
