@@ -8,7 +8,7 @@ public class EnemyAI : MonoBehaviour
     private Transform Player;
     private float AttackArea = 30;
     //int set = -90;
-    private float speed = 3;
+    private float speed = 8;
 
     private CharacterController controller;
     // Start is called before the first frame update
