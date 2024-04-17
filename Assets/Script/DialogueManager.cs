@@ -22,11 +22,11 @@ public class DialogueManager : MonoBehaviour
         startTime = Time.time;
     }
 
-    //void Update()
-    //{
-    //    string dislogue = dialogueSO.GetDialogue();
-    //    dialogueText.text = dislogue.Substring(0, Mathf.Min((int)((Time.time - startTime) * speed), dislogue.Length));
-    //}
+    void Update()
+    {
+        string dislogue = dialogueSO.GetDialogue();
+        dialogueText.text = dislogue.Substring(0, Mathf.Min((int)((Time.time - startTime) * speed), dislogue.Length));
+    }
 
     public void DisplayDialoguePanel()
     {
