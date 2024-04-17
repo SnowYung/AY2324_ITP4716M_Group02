@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -33,5 +34,6 @@ public class EnemyAI : MonoBehaviour
             controller.Move(gameObject.transform.forward * speed * Time.deltaTime);
             
         }
+        
     }
 }

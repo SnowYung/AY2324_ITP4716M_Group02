@@ -14,14 +14,17 @@ public class SrM1HP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    if (M1HP.fillAmount == 0)
+        {
+            Destroy(gameObject);
+        }
     }
     public Image M1HP;
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "PlayerWeapon")
         {
-            M1HP.fillAmount -= 0.3f;
+            M1HP.fillAmount -= 0.2f;
         }
     }
 }
