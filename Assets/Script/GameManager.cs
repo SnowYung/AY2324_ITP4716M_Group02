@@ -36,10 +36,6 @@ public class GameManager : MonoBehaviour
         {
             dialogueManager.SetDialogue(dialogueSos[dialogueIndex++]);
         }
-        //else
-        //{
-        //    dialogueManager.HideDialoguePanel();
-        //}
     }
 
     public void SetEnglish()

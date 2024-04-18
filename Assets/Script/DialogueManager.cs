@@ -14,7 +14,6 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueSO dialogueSO;
 
-
     public void SetDialogue(DialogueSO dialogueSO)
     {
         dialogueText.text = "";
