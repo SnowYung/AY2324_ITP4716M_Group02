@@ -14,19 +14,19 @@ public class SrM1HP : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (M1HP.fillAmount == 0)
-        {
-            Destroy(gameObject);
-            GameOver--;
-            Debug.Log(GameOver);
-        }
-        if (GameOver == 10)
-        {
-            Application.Quit();
-        }
-    }
+    //void Update()
+    //{
+    //    //if (M1HP.fillAmount == 0)
+    //    //{
+    //    //    Destroy(gameObject);
+    //    //    GameOver--;
+    //    //    Debug.Log(GameOver);
+    //    //}
+    //    if (GameOver == 10)
+    //    {
+    //        Application.Quit();
+    //    }
+    //}
     public Image M1HP;
     public void OnTriggerEnter(Collider other)
     {
