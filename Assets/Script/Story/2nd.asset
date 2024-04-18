@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24aca12a3bec97c4797dc9b5c1b567c6, type: 3}
   m_Name: 2nd
   m_EditorClassIdentifier: 
-  englishDialogue: 
-  chineseDialogue: 
+  englishDialogue: 'Three years ago, this was a world full of laughter and joy, with
+    every corner exuding vitality and beauty. People would not create or litter.
+    However, with the advancement of science and technology, humans have gradually
+    become dependent on technology, and the city is full of garbage. The air is gradually
+    becoming polluted, the air that humans breathe is becoming thinner and thinner,
+    and the environment is filled with haze. '
+  chineseDialogue: "\u4E09\u5E74\u524D\uFF0C\u9019\u88E1\u9084\u662F\u4E00\u500B\u6B61\u8072\u7B11\u8A9E\u7684\u4E16\u754C\uFF0C\u6BCF\u500B\u89D2\u843D\u90FD\u6563\u767C\u8457\u751F\u6A5F\u548C\u7F8E\u597D\uFF0C\u5927\u5BB6\u4E0D\u6703\u5236\u9020\u5783\u573E\uFF0C\u4EA6\u4E0D\u6703\u4E82\u4E1F\u5783\u573E\u3002\u7136\u800C\uFF0C\u96A8\u8457\u79D1\u6280\u7684\u9032\u6B65\uFF0C\u4EBA\u985E\u9010\u6F38\u4F9D\u8CF4\u79D1\u6280\uFF0C\u57CE\u5E02\u5468\u570D\u5145\u6EFF\u5783\u573E\u3002\u7A7A\u6C23\u9010\u6B65\u53D7\u5230\u6C61\u67D3\uFF0C\u4EBA\u985E\u547C\u5438\u7684\u7A7A\u6C23\u8B8A\u5F97\u8D8A\u4F86\u8D8A\u7A00\u8584\uFF0C\u74B0\u5883\u904D\u4F48\u9727\u973E\u3002"

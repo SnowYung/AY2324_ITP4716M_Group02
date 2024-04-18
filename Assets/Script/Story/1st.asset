@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24aca12a3bec97c4797dc9b5c1b567c6, type: 3}
   m_Name: 1st
   m_EditorClassIdentifier: 
-  englishDialogue: On a seemingly ordinary day, the city was sleeping quietly. However,
-    a sudden change broke the appearance of peace and heralded the end of the world.
+  englishDialogue: 'On a seemingly ordinary day, the city was sleeping quietly. However,
+    a sudden change broke the appearance of peace and heralded the end of the world. '
   chineseDialogue: "\u5728\u4E00\u500B\u770B\u4F3C\u5E73\u51E1\u7684\u65E5\u5B50\u88E1\uFF0C\u57CE\u5E02\u5B89\u975C\u5730\u6C88\u7761\u8457\u3002\u7136\u800C\uFF0C\u4E00\u5834\u7A81\u5982\u5176\u4F86\u7684\u8B8A\u6545\u6253\u7834\u4E86\u9019\u548C\u5E73\u7684\u8868\u8C61\uFF0C\u4E5F\u9810\u793A\u8457\u672B\u65E5\u7684\u964D\u81E8\u3002 "
