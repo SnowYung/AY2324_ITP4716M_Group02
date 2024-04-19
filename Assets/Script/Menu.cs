@@ -25,7 +25,7 @@ public class Menu : MonoBehaviour
         }
     }
 
-    void StopGame()
+    public void StopGame()
     {
         Time.timeScale = 0f;
         MenuUI.gameObject.SetActive(true);
