@@ -11,8 +11,16 @@ public class WeaponControll : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+<<<<<<< Updated upstream
     void Update()
     {
+=======
+    
+
+
+        private void Update()
+        {
+>>>>>>> Stashed changes
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("Left Click");
@@ -22,5 +30,6 @@ public class WeaponControll : MonoBehaviour
         {
             anim.SetTrigger("Right Click");
         }
+        }
     }
-}
+
