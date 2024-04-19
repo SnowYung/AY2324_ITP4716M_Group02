@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField]
-    AudioSource audio;
+    AudioSource sound;
 
     [SerializeField]
     AudioClip spandbyMusic;
@@ -23,24 +23,24 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySpandbyMusic()
     {
-        audio.clip = spandbyMusic;
-        audio.Play();
+        sound.clip = spandbyMusic;
+        sound.Play();
     }
 
     public void PlaySettingMusic()
     {
-        audio.clip = settingMusic;
-        audio.Play();
+        sound.clip = settingMusic;
+        sound.Play();
     }
 
     public void PlayDialogueMusic()
     {
-        audio.clip = dialogueMusic;
-        audio.Play();
+        sound.clip = dialogueMusic;
+        sound.Play();
     }
 
     public void StopMusic()
     {
-        audio.Stop();
+        sound.Stop();
     }
 }

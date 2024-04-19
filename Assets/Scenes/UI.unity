@@ -867,7 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc66003973d7ec847bda9921a3e095de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 238921663}
+  sound: {fileID: 238921663}
   spandbyMusic: {fileID: 8300000, guid: 1fa01092d0b9d9a4490f233216f2f2a3, type: 3}
   settingMusic: {fileID: 8300000, guid: 899b9e76458244f40872776b4a117fdc, type: 3}
   dialogueMusic: {fileID: 8300000, guid: ad6bc0833d48ab746b7e850835fe4dbf, type: 3}
@@ -2721,6 +2721,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1792366110}
         m_TargetAssemblyTypeName: NextGame, Assembly-CSharp
         m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1404131091}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: PlayNextDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
