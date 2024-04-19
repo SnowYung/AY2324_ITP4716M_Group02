@@ -11,7 +11,7 @@ public class WeaponControll : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {

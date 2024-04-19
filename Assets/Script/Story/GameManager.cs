@@ -5,10 +5,10 @@ using UnityEngine;
 public enum Language { English, Chinese }
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] DialogueSO[] dialogueSos;
-    int dialogueIndex;
+    [SerializeField] StorySO[] storySos;
+    int storyIndex;
 
-    [SerializeField] DialogueManager dialogueManager;
+    [SerializeField] StoryManager storyManager;
 
 
     private static Language language = Language.English;
@@ -32,9 +32,9 @@ public class GameManager : MonoBehaviour
 
     void PlayNextDialogue()
     {
-        if (dialogueIndex < dialogueSos.Length)
+        if (storyIndex < storySos.Length)
         {
-            dialogueManager.SetDialogue(dialogueSos[dialogueIndex++]);
+            storyManager.SetDialogue(storySos[storyIndex++]);
         }
     }
 

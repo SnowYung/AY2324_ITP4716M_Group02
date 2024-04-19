@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Script", menuName = "SO/DialogueSO", order = 1)]
-public class DialogueSO : ScriptableObject
+[CreateAssetMenu(fileName = "Script", menuName = "SO/StorySO", order = 1)]
+public class StorySO : ScriptableObject
 {
 
     [SerializeField] string englishDialogue;
