@@ -39,17 +39,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (clampVerticalRotation)
                 m_CameraTargetRot = ClampRotationAroundXAxis(m_CameraTargetRot);
 
-            if (smooth)
+
+            if (Time.timeScale > 0)
             {
-                character.localRotation = Quaternion.Slerp(character.localRotation, m_CharacterTargetRot,
-                    smoothTime * Time.deltaTime);
-                camera.localRotation = Quaternion.Slerp(camera.localRotation, m_CameraTargetRot,
-                    smoothTime * Time.deltaTime);
-            }
-            else
-            {
-                character.localRotation = m_CharacterTargetRot;
-                camera.localRotation = m_CameraTargetRot;
+                if (smooth)
+                {
+                    character.localRotation = Quaternion.Slerp(character.localRotation, m_CharacterTargetRot,
+                        smoothTime * Time.deltaTime);
+                    camera.localRotation = Quaternion.Slerp(camera.localRotation, m_CameraTargetRot,
+                        smoothTime * Time.deltaTime);
+                }
+                else
+                {
+                    character.localRotation = m_CharacterTargetRot;
+                    camera.localRotation = m_CameraTargetRot;
+                }
             }
 
             UpdateCursorLock();
@@ -72,16 +76,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 InternalLockUpdate();
         }
 
+        public void SetCursorVisibility(bool isLock)
+        {
+            m_cursorIsLocked = isLock;
+        }
+
         private void InternalLockUpdate()
         {
-            if (Input.GetKeyUp(KeyCode.Escape))
-            {
-                m_cursorIsLocked = false;
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                m_cursorIsLocked = true;
-            }
+            //if (Input.GetKeyUp(KeyCode.Escape))
+            //{
+            //    m_cursorIsLocked = false;
+            //}
+            //else if (Input.GetMouseButtonUp(0))
+            //{
+            //    m_cursorIsLocked = true;
+            //}
 
             if (m_cursorIsLocked)
             {

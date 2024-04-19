@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        PlayNextDialogue();
+        //PlayNextDialogue();
     }
 
     void Update()
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void PlayNextDialogue()
+    public void PlayNextDialogue()
     {
         if (storyIndex < storySos.Length)
         {

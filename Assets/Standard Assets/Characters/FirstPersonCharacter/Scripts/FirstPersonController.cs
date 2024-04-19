@@ -237,7 +237,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+             m_MouseLook.LookRotation(transform, m_Camera.transform);
         }
 
 
@@ -255,6 +255,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        public void SetCursorVisibility(bool isLock)
+        {
+            m_MouseLook.SetCursorVisibility(isLock);
         }
     }
 }

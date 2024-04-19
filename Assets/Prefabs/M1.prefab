@@ -192,7 +192,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924647325884911706}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 36.38, y: 0, z: 3.817}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -1683,6 +1683,7 @@ GameObject:
   - component: {fileID: 924647326594354769}
   - component: {fileID: 924647326594354782}
   - component: {fileID: 924647326594354783}
+  - component: {fileID: 7507699502496710869}
   m_Layer: 0
   m_Name: M1Weapon
   m_TagString: Untagged
@@ -1767,6 +1768,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7507699502496710869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924647326594354781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0823f9324a9d40a5c62786150a0ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &924647326625573912
 GameObject:
   m_ObjectHideFlags: 0

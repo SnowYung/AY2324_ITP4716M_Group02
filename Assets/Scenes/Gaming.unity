@@ -33326,6 +33326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuUI: {fileID: 1437604268}
+  fpsController: {fileID: 1845700686}
 --- !u!1 &1307843103
 GameObject:
   m_ObjectHideFlags: 0
@@ -38047,7 +38048,7 @@ BoxCollider:
   m_GameObject: {fileID: 1491551461}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 2}
   m_Center: {x: 0, y: 0, z: 0.2}

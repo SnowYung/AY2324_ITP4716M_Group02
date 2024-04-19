@@ -17,6 +17,7 @@ public class StoryManager : MonoBehaviour
 
     public void SetDialogue(StorySO storySO)
     {
+        Debug.Log("Set Dialog");
         storyText.text = "";
         this.storySO = storySO;
         startTime = Time.time;

@@ -23,11 +23,17 @@ public class SrPlayerHP : MonoBehaviour
     
 }
     public Image PlayerHP;
-    public void OnTriggerEnter(Collider other)
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.name == "M1Weapon")
+    //    {
+    //        PlayerHP.fillAmount -= 0.05f;
+    //        //Debug.Log("HP reduced");
+    //    }
+    //}
+
+    public void GetDamage(float damage)
     {
-        if(other.gameObject.name == "M1Weapon")
-        {
-            PlayerHP.fillAmount -= 0.05f;
-        }
+        PlayerHP.fillAmount -= damage;
     }
 }
