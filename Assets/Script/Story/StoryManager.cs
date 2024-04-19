@@ -13,6 +13,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] float speed = 1;
 
     private StorySO storySO;
+    
 
     public void SetDialogue(StorySO storySO)
     {

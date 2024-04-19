@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Script", menuName = "SO/StorySO", order = 1)]
+
 public class StorySO : ScriptableObject
 {
 
