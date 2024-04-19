@@ -7,10 +7,6 @@ using UnityEngine.UI;
 public class SrM1HP : MonoBehaviour
 {
 
-
-
-
-
     // Start is called before the first frame update
 
     void Start()
@@ -26,12 +22,6 @@ public class SrM1HP : MonoBehaviour
 
         }
     }
-
-
-
-        
-    
-
     public Image M1HP;
     public void OnTriggerEnter(Collider other)
     {

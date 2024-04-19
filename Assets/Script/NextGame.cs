@@ -9,6 +9,7 @@ public class NextGame : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Gaming");
     }
+
     public void Quit()
     {
         Application.Quit();

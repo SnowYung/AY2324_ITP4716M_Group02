@@ -11,13 +11,6 @@ public class WeaponControll : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-
-
-
-
-
-
-
     private void Update()
     {
 
