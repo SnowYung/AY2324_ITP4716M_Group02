@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class SrM1HP : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    int GameOver = 10;
 
-=======
+
+
+
 
     // Start is called before the first frame update
->>>>>>> Stashed changes
+
     void Start()
     {
         
@@ -23,15 +23,15 @@ public class SrM1HP : MonoBehaviour
         if (M1HP.fillAmount == 0)
         {
             Destroy(gameObject);
-<<<<<<< Updated upstream
-        }
-    }
-
-=======
 
         }
     }
->>>>>>> Stashed changes
+
+
+
+        
+    
+
     public Image M1HP;
     public void OnTriggerEnter(Collider other)
     {

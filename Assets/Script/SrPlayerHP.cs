@@ -17,7 +17,7 @@ public class SrPlayerHP : MonoBehaviour
     {
         if (PlayerHP.fillAmount == 0)
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         }
     

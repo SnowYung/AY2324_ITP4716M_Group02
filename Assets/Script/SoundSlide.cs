@@ -1,27 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundSlide : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject soundSlide;
-    private float interval = 0.5f;
+    public AudioSource sound;
+    public Slider slider;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            //M1HP.fillAmount -= 0.2f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            //M1HP.fillAmount -= 0.2f;
+        }
     }
 
-    public void AdjustSpawnInterval(float interval)
+    public void Audio()
     {
-        this.interval = interval;
+        sound.volume = slider.value;
     }
 }

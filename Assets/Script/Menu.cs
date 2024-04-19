@@ -31,11 +31,6 @@ public class Menu : MonoBehaviour
         MenuUI.gameObject.SetActive(true);
     }
 
-    //public void Sound()
-    //{
-
-    //}
-
     public void BackGame()
     {
         Time.timeScale = 1f;
