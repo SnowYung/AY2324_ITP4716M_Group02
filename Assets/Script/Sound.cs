@@ -5,24 +5,19 @@ using UnityEngine.UI;
 
 public class Sound : MonoBehaviour
 {
-    public Slider slider;
-    public AudioSource sound;
+    private AudioSource sound;
+    private float preVolume;
 
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.RightArrow))
-    //    {
-    //        M1HP.fillAmount -= 0.2f;
-    //    }
-
-    //    if (Input.GetKeyDown(KeyCode.LeftArrow))
-    //    {
-    //        M1HP.fillAmount -= 0.2f;
-    //    }
-    //}
-
-    public void Audio()
+    void Start()
     {
-        sound.volume = slider.value;
+        sound = GetComponent<AudioSource>();
+        sound.volume = 1;
+        preVolume = sound.volume;
+    }
+
+    public void VolumeChanged(float newVolume)
+    {
+        //sound.volume = newVolume;
+        AudioListener.volume = newVolume;
     }
 }

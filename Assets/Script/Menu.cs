@@ -18,16 +18,6 @@ public class Menu : MonoBehaviour
             fpsController.SetCursorVisibility(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            BackGame();
-            fpsController.SetCursorVisibility(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ExitGame();
-        }
     }
 
     public void StopGame()

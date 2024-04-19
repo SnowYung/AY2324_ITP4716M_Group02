@@ -11,6 +11,9 @@ public class AudioManager : MonoBehaviour
     AudioClip spandbyMusic;
 
     [SerializeField]
+    AudioClip settingMusic;
+
+    [SerializeField]
     AudioClip dialogueMusic;
 
     private void Start()
@@ -21,6 +24,12 @@ public class AudioManager : MonoBehaviour
     public void PlaySpandbyMusic()
     {
         audio.clip = spandbyMusic;
+        audio.Play();
+    }
+
+    public void PlaySettingMusic()
+    {
+        audio.clip = settingMusic;
         audio.Play();
     }
 

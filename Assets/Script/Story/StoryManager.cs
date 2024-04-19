@@ -17,7 +17,7 @@ public class StoryManager : MonoBehaviour
 
     public void SetDialogue(StorySO storySO)
     {
-        Debug.Log("Set Dialog");
+        //Debug.Log("Set Dialog");
         storyText.text = "";
         this.storySO = storySO;
         startTime = Time.time;
@@ -27,6 +27,17 @@ public class StoryManager : MonoBehaviour
     {
         string dislogue = storySO.GetDialogue();
         storyText.text = dislogue.Substring(0, Mathf.Min((int)((Time.time - startTime) * speed), dislogue.Length));
+    }
+
+    public bool IsDialogueEnded()
+    {
+        return (int)((Time.time - startTime) * speed) > storySO.GetDialogue().Length;
+    }
+
+    public void EndDialogue()
+    {
+        Debug.Log("EndDialogue");
+        startTime -= storySO.GetDialogue().Length / speed;
     }
 
     public void DisplayDialoguePanel()

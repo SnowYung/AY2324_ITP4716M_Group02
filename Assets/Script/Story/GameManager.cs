@@ -26,16 +26,30 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayNextDialogue();
+            if(storyManager.IsDialogueEnded())
+            {
+                PlayNextDialogue();
+            }
+            else
+            {
+                storyManager.EndDialogue();
+            }
         }
     }
 
     public void PlayNextDialogue()
     {
+        Debug.Log("PlayerDialogue");
         if (storyIndex < storySos.Length)
         {
             storyManager.SetDialogue(storySos[storyIndex++]);
         }
+    }
+
+    public void RestartDialogue()
+    {
+        storyIndex = 0;
+        //storyManager.SetDialogue(storySos[0]);
     }
 
     public void SetEnglish()
