@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundSlide : MonoBehaviour
+public class Sound : MonoBehaviour
 {
-    public AudioSource sound;
     public Slider slider;
+    public AudioSource sound;
 
     void Update()
     {
