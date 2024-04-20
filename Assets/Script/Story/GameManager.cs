@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum Language { English, Chinese }
 public class GameManager : MonoBehaviour
@@ -10,8 +11,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] StoryManager storyManager;
 
+    public GameObject goButton;
 
     private static Language language = Language.English;
+
     public static Language GetLanguage()
     {
         return language;
@@ -39,10 +42,15 @@ public class GameManager : MonoBehaviour
 
     public void PlayNextDialogue()
     {
-        Debug.Log("PlayerDialogue");
+        //Debug.Log("PlayerDialogue");
         if (storyIndex < storySos.Length)
         {
             storyManager.SetDialogue(storySos[storyIndex++]);
+            goButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            goButton.gameObject.SetActive(true);
         }
     }
 

@@ -350,6 +350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storySos: []
   storyManager: {fileID: 0}
+  goButton: {fileID: 0}
 --- !u!1 &46876999
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,18 +2743,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1404131091}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: PlayNextDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1258037755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3405,6 +3394,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cae54c8b8edf09c44a3b5ed644dfb6dc, type: 2}
   - {fileID: 11400000, guid: 5c0a182e331c1144d9ecdd124ac549cb, type: 2}
   storyManager: {fileID: 1733605343}
+  goButton: {fileID: 1258037752}
 --- !u!4 &1404131092
 Transform:
   m_ObjectHideFlags: 0
@@ -4359,6 +4349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storySos: []
   storyManager: {fileID: 0}
+  goButton: {fileID: 0}
 --- !u!1 &1882831362
 GameObject:
   m_ObjectHideFlags: 0

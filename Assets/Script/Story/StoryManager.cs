@@ -36,7 +36,7 @@ public class StoryManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        Debug.Log("EndDialogue");
+        //Debug.Log("EndDialogue");
         startTime -= storySO.GetDialogue().Length / speed;
     }
 
