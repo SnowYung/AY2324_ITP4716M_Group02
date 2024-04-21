@@ -318,8 +318,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 07527962d84de674197f5068143ca43d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 33e1b966978b1c1478a27a752e2e994b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1001,8 +1001,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fa076ee64795df4cb73c10563bcac1d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 27b94cd3d3fe9f84f9dbe10d54506007, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2135,8 +2135,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 07527962d84de674197f5068143ca43d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 33e1b966978b1c1478a27a752e2e994b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2989,8 +2989,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fa076ee64795df4cb73c10563bcac1d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 27b94cd3d3fe9f84f9dbe10d54506007, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4076,8 +4076,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fa076ee64795df4cb73c10563bcac1d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 27b94cd3d3fe9f84f9dbe10d54506007, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4398,8 +4398,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 07527962d84de674197f5068143ca43d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 33e1b966978b1c1478a27a752e2e994b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4785,7 +4785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2030103610
 RectTransform:
   m_ObjectHideFlags: 0
