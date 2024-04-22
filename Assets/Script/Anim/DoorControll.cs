@@ -17,6 +17,7 @@ public class DoorControll : MonoBehaviour
         if (other.tag == "Player")
         {
             anim.SetTrigger("Open");
+            //Debug.Log(other.gameObject.name+" Open " + Time.time);
         }
     }
 
@@ -25,6 +26,7 @@ public class DoorControll : MonoBehaviour
         if (other.tag == "Player")
         {
             anim.SetTrigger("Close");
+            //Debug.Log("Close " + Time.time);
         }
     }
 }

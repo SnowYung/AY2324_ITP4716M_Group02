@@ -4221,9 +4221,9 @@ GameObject:
   - component: {fileID: 174940613}
   - component: {fileID: 174940612}
   - component: {fileID: 174940611}
-  - component: {fileID: 174940610}
   - component: {fileID: 174940609}
   - component: {fileID: 174940608}
+  - component: {fileID: 174940610}
   m_Layer: 0
   m_Name: Door (5)
   m_TagString: Untagged
@@ -4276,8 +4276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &174940610
-SphereCollider:
+--- !u!136 &174940610
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4286,8 +4286,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &174940611
 MeshCollider:
@@ -9963,9 +9964,9 @@ GameObject:
   - component: {fileID: 410368790}
   - component: {fileID: 410368789}
   - component: {fileID: 410368788}
-  - component: {fileID: 410368787}
   - component: {fileID: 410368786}
   - component: {fileID: 410368785}
+  - component: {fileID: 410368787}
   m_Layer: 0
   m_Name: Door (9)
   m_TagString: Untagged
@@ -10018,8 +10019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &410368787
-SphereCollider:
+--- !u!136 &410368787
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10028,8 +10029,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &410368788
 MeshCollider:
@@ -10513,9 +10515,9 @@ GameObject:
   - component: {fileID: 437118267}
   - component: {fileID: 437118266}
   - component: {fileID: 437118265}
-  - component: {fileID: 437118264}
   - component: {fileID: 437118263}
   - component: {fileID: 437118262}
+  - component: {fileID: 437118264}
   m_Layer: 0
   m_Name: Door (12)
   m_TagString: Untagged
@@ -10568,8 +10570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &437118264
-SphereCollider:
+--- !u!136 &437118264
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10578,8 +10580,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &437118265
 MeshCollider:
@@ -21158,9 +21161,9 @@ GameObject:
   - component: {fileID: 803339433}
   - component: {fileID: 803339432}
   - component: {fileID: 803339431}
-  - component: {fileID: 803339430}
   - component: {fileID: 803339429}
   - component: {fileID: 803339428}
+  - component: {fileID: 803339430}
   m_Layer: 0
   m_Name: Door (3)
   m_TagString: Untagged
@@ -21213,8 +21216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &803339430
-SphereCollider:
+--- !u!136 &803339430
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21223,8 +21226,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &803339431
 MeshCollider:
@@ -22947,9 +22951,9 @@ GameObject:
   - component: {fileID: 880347490}
   - component: {fileID: 880347489}
   - component: {fileID: 880347488}
-  - component: {fileID: 880347487}
   - component: {fileID: 880347486}
   - component: {fileID: 880347485}
+  - component: {fileID: 880347487}
   m_Layer: 0
   m_Name: Door (13)
   m_TagString: Untagged
@@ -23002,8 +23006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &880347487
-SphereCollider:
+--- !u!136 &880347487
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23012,8 +23016,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &880347488
 MeshCollider:
@@ -28007,7 +28012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1086045824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33511,9 +33516,9 @@ GameObject:
   - component: {fileID: 1308503228}
   - component: {fileID: 1308503227}
   - component: {fileID: 1308503226}
-  - component: {fileID: 1308503225}
   - component: {fileID: 1308503224}
   - component: {fileID: 1308503223}
+  - component: {fileID: 1308503225}
   m_Layer: 0
   m_Name: Door (6)
   m_TagString: Untagged
@@ -33566,8 +33571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1308503225
-SphereCollider:
+--- !u!136 &1308503225
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -33576,8 +33581,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1308503226
 MeshCollider:
@@ -34382,9 +34388,9 @@ GameObject:
   - component: {fileID: 1341787925}
   - component: {fileID: 1341787924}
   - component: {fileID: 1341787923}
-  - component: {fileID: 1341787922}
   - component: {fileID: 1341787921}
   - component: {fileID: 1341787920}
+  - component: {fileID: 1341787922}
   m_Layer: 0
   m_Name: Door (7)
   m_TagString: Untagged
@@ -34437,8 +34443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1341787922
-SphereCollider:
+--- !u!136 &1341787922
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -34447,8 +34453,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1341787923
 MeshCollider:
@@ -37950,9 +37957,9 @@ GameObject:
   - component: {fileID: 1488704359}
   - component: {fileID: 1488704358}
   - component: {fileID: 1488704357}
-  - component: {fileID: 1488704356}
   - component: {fileID: 1488704355}
   - component: {fileID: 1488704354}
+  - component: {fileID: 1488704356}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -38005,8 +38012,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!135 &1488704356
-SphereCollider:
+--- !u!136 &1488704356
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -38015,8 +38022,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1488704357
 MeshCollider:
@@ -40247,9 +40255,9 @@ GameObject:
   - component: {fileID: 1591025650}
   - component: {fileID: 1591025649}
   - component: {fileID: 1591025648}
-  - component: {fileID: 1591025647}
   - component: {fileID: 1591025646}
   - component: {fileID: 1591025645}
+  - component: {fileID: 1591025647}
   m_Layer: 0
   m_Name: Door (11)
   m_TagString: Untagged
@@ -40302,8 +40310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1591025647
-SphereCollider:
+--- !u!136 &1591025647
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -40312,8 +40320,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1591025648
 MeshCollider:
@@ -41304,9 +41313,9 @@ GameObject:
   - component: {fileID: 1621765402}
   - component: {fileID: 1621765401}
   - component: {fileID: 1621765400}
-  - component: {fileID: 1621765399}
   - component: {fileID: 1621765398}
   - component: {fileID: 1621765397}
+  - component: {fileID: 1621765399}
   m_Layer: 0
   m_Name: Door (2)
   m_TagString: Untagged
@@ -41359,8 +41368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1621765399
-SphereCollider:
+--- !u!136 &1621765399
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -41369,8 +41378,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1621765400
 MeshCollider:
@@ -42629,9 +42639,9 @@ GameObject:
   - component: {fileID: 1661256914}
   - component: {fileID: 1661256913}
   - component: {fileID: 1661256912}
-  - component: {fileID: 1661256911}
   - component: {fileID: 1661256910}
   - component: {fileID: 1661256909}
+  - component: {fileID: 1661256911}
   m_Layer: 0
   m_Name: Door (1)
   m_TagString: Untagged
@@ -42684,8 +42694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1661256911
-SphereCollider:
+--- !u!136 &1661256911
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -42694,8 +42704,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1661256912
 MeshCollider:
@@ -46295,9 +46306,9 @@ GameObject:
   - component: {fileID: 1824133581}
   - component: {fileID: 1824133580}
   - component: {fileID: 1824133579}
-  - component: {fileID: 1824133578}
   - component: {fileID: 1824133577}
   - component: {fileID: 1824133576}
+  - component: {fileID: 1824133578}
   m_Layer: 0
   m_Name: Door (8)
   m_TagString: Untagged
@@ -46350,8 +46361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1824133578
-SphereCollider:
+--- !u!136 &1824133578
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -46360,8 +46371,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1824133579
 MeshCollider:
@@ -46714,9 +46726,9 @@ GameObject:
   - component: {fileID: 1839892136}
   - component: {fileID: 1839892135}
   - component: {fileID: 1839892134}
-  - component: {fileID: 1839892133}
   - component: {fileID: 1839892132}
   - component: {fileID: 1839892131}
+  - component: {fileID: 1839892133}
   m_Layer: 0
   m_Name: Door (10)
   m_TagString: Untagged
@@ -46769,8 +46781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1839892133
-SphereCollider:
+--- !u!136 &1839892133
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -46779,8 +46791,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1839892134
 MeshCollider:
@@ -47846,7 +47859,7 @@ BoxCollider:
   m_GameObject: {fileID: 1856986542}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -52255,9 +52268,9 @@ GameObject:
   - component: {fileID: 2053776902}
   - component: {fileID: 2053776901}
   - component: {fileID: 2053776900}
-  - component: {fileID: 2053776899}
   - component: {fileID: 2053776898}
   - component: {fileID: 2053776897}
+  - component: {fileID: 2053776899}
   m_Layer: 0
   m_Name: Door (4)
   m_TagString: Untagged
@@ -52310,8 +52323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &2053776899
-SphereCollider:
+--- !u!136 &2053776899
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -52320,8 +52333,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 5
+  m_Height: 5
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &2053776900
 MeshCollider:
