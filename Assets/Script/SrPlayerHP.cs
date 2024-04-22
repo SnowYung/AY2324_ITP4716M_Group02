@@ -18,7 +18,7 @@ public class SrPlayerHP : MonoBehaviour
         if (PlayerHP.fillAmount == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
+            GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
         }
     
 }

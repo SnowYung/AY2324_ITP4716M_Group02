@@ -18,8 +18,8 @@ public class SrM1HP : MonoBehaviour
     {
         if (M1HP.fillAmount == 0)
         {
+            GameObject.Find("Enermys").GetComponent<updataNum>().UpdateMark();
             Destroy(gameObject);
-
         }
     }
     public Image M1HP;
@@ -28,6 +28,7 @@ public class SrM1HP : MonoBehaviour
         if (other.gameObject.name == "PlayerWeapon")
         {
             M1HP.fillAmount -= 0.2f;
+            
         }
     }
 }

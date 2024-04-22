@@ -16196,6 +16196,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 612707919}
+  - component: {fileID: 612707920}
+  - component: {fileID: 612707921}
   m_Layer: 0
   m_Name: Enermys
   m_TagString: Untagged
@@ -16217,6 +16219,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &612707920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612707918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bd31cce8f7f6c4a823febd3ee6b1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackGroundUI: {fileID: 1086045827}
+--- !u!114 &612707921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612707918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01beea0a45294d4b820797fd08ad80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &620269007
 GameObject:
   m_ObjectHideFlags: 0
@@ -28006,13 +28033,14 @@ GameObject:
   - component: {fileID: 1086045824}
   - component: {fileID: 1086045826}
   - component: {fileID: 1086045825}
+  - component: {fileID: 1086045827}
   m_Layer: 5
   m_Name: Game Win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1086045824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28070,6 +28098,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086045823}
   m_CullTransparentMesh: 1
+--- !u!225 &1086045827
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086045823}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1090776730
 GameObject:
   m_ObjectHideFlags: 0
