@@ -30,6 +30,7 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1f;
         MenuUI.gameObject.SetActive(false);
+        fpsController.SetCursorVisibility(true);
     }
 
     public void ExitGame()
