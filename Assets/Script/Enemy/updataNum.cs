@@ -4,17 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 public class updataNum : MonoBehaviour
 {
-    int Mark = 0 ;
+    /*private static*/ int Mark = 0;
     public CanvasGroup BackGroundUI;
     float timer;
     float fadeDuration = 1f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    //private static Text numText;
+
+    //void Start()
+    //{
+    //    numText = GetComponent<Text>();
+    //    UpdateNumVisual();
+    //}
+
+
     void Update()
     {
       if (Mark == 10)
@@ -27,14 +30,20 @@ public class updataNum : MonoBehaviour
             }
         }
     }
+
     public void UpdateMark()
     {
         Mark = Mark + 1;
-        
     }
+
     public void ResetMark()
     {
         Mark = 0;
-       
     }
+
+    //private static void UpdateNumVisual()
+    //{
+    //    numText.text = Mark.ToString();
+    //}
+
 }
