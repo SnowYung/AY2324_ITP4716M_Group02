@@ -46,11 +46,11 @@ public class GameManager : MonoBehaviour
         if (storyIndex < storySos.Length)
         {
             storyManager.SetDialogue(storySos[storyIndex++]);
-            goButton.gameObject.SetActive(false);
+            goButton.SetActive(false);
         }
         else
         {
-            goButton.gameObject.SetActive(true);
+            goButton.SetActive(true);
         }
     }
 
