@@ -28,7 +28,7 @@ public class SrM1HP : MonoBehaviour
         {
             M1HP.fillAmount -= 0.2f;
             GameObject.Find("M1(Clone)").GetComponent<EnemyAI>().setspeed();
-            Debug.Log("1");
+            
         }
     }
 }
