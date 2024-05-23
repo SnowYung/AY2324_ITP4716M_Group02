@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class NumText : MonoBehaviour
 {
-    private static int num = 0;
+    private static int num = 10;
     private static Text numText;
 
     void Start()
@@ -21,13 +21,13 @@ public class NumText : MonoBehaviour
 
     public static void UpdateNum(int value)
     {
-        num += value;
+        num -= value;
         UpdateNumVisual();
     }
 
     public static void ResetNum()
     {
-        num = 0;
+        num = 10;
         UpdateNumVisual();
     }
 }
