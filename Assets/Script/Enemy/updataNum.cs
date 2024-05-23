@@ -4,19 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class updataNum : MonoBehaviour
 {
-    /*private static*/ int Mark = 0;
+    int Mark = 0;
     public CanvasGroup BackGroundUI;
     float timer;
     float fadeDuration = 1f;
-
-    //private static Text numText;
-
-    //void Start()
-    //{
-    //    numText = GetComponent<Text>();
-    //    UpdateNumVisual();
-    //}
-
 
     void Update()
     {
@@ -24,9 +15,10 @@ public class updataNum : MonoBehaviour
         {
             timer += Time.deltaTime;
             BackGroundUI.alpha = timer / fadeDuration;
-            if(timer> fadeDuration + 2f)
+            if(timer > fadeDuration + 2f)
             {
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
+                NumText.ResetNum();
             }
         }
     }
@@ -40,10 +32,5 @@ public class updataNum : MonoBehaviour
     {
         Mark = 0;
     }
-
-    //private static void UpdateNumVisual()
-    //{
-    //    numText.text = Mark.ToString();
-    //}
 
 }

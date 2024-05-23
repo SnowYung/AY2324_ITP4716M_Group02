@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     private float speed = 5;
 
     private CharacterController controller;
-    // Start is called before the first frame update
+
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -19,7 +19,6 @@ public class EnemyAI : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 targetPos = Player.position;
@@ -27,13 +26,11 @@ public class EnemyAI : MonoBehaviour
         targetPos.y = transform.position.y;
 
         float dis = Vector3.Distance(targetPos, transform.position);
-        
+
         if (dis <= AttackArea)
         {
             transform.LookAt(targetPos);
             controller.Move(gameObject.transform.forward * speed * Time.deltaTime);
-            
         }
-        
     }
 }

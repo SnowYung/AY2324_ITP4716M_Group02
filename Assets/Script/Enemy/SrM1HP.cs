@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class SrM1HP : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-
     void Start()
     {
         
@@ -20,6 +18,7 @@ public class SrM1HP : MonoBehaviour
         {
             GameObject.Find("Enermys").GetComponent<updataNum>().UpdateMark();
             Destroy(gameObject);
+            NumText.UpdateNum(1);
         }
     }
     public Image M1HP;
