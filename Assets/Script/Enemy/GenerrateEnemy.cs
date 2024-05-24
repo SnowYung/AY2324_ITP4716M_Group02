@@ -6,19 +6,31 @@ public class GenerrateEnemy : MonoBehaviour
 {
     public GameObject M1Position;
     public GameObject M1;
-    // Start is called before the first frame update
+
+    public GameObject enemy;
+
     void Start()
     {
         for (int i=0;  i<10; i++)
         {
-            GameObject enemy =  Instantiate(M1Position, new Vector3((float)(Random.Range(-45, 45)), 0, (float)(Random.Range(-45, 45))), new Quaternion(0f, 0f, 0f, 0f), M1.transform);
+            enemy =  Instantiate(M1Position, new Vector3((float)(Random.Range(-45, 45)), 0, (float)(Random.Range(-45, 45))), new Quaternion(0f, 0f, 0f, 0f), M1.transform);
             //enemy.transform.parent = M1.transform;
+            
+            if (enemy.transform.position.y > 0 )
+            {
+                Destroy(gameObject);
+                i -= 1;
+            }
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+            //if (enemy.GetComponent<CharacterController>())
+            //{
+
+            //}
+
     }
+
 }

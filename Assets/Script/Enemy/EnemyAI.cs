@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
             speed = 1;
         }
        
-       Debug.Log("1");
+       //Debug.Log("1");
     }
 
 }

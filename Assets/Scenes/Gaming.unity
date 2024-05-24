@@ -41816,6 +41816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   M1Position: {fileID: 924647325884911706, guid: 96749b62a2e341f42af2578c5dd5692a, type: 3}
   M1: {fileID: 612707918}
+  enemy: {fileID: 0}
 --- !u!65 &1219893580
 BoxCollider:
   m_ObjectHideFlags: 0
