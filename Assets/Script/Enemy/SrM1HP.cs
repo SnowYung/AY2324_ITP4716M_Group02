@@ -27,7 +27,7 @@ public class SrM1HP : MonoBehaviour
         if (other.gameObject.name == "PlayerWeapon")
         {
             M1HP.fillAmount -= 0.2f;
-            GameObject.Find("M1(Clone)").GetComponent<EnemyAI>().setspeed();
+            GetComponent<EnemyAI>().setspeed();
             
         }
     }

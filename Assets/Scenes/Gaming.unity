@@ -17133,7 +17133,7 @@ GameObject:
   - component: {fileID: 495203889}
   - component: {fileID: 495203888}
   - component: {fileID: 495203887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42094,6 +42094,10 @@ MonoBehaviour:
   M1Position: {fileID: 924647325884911706, guid: 96749b62a2e341f42af2578c5dd5692a, type: 3}
   M1: {fileID: 612707918}
   enemy: {fileID: 0}
+  i: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2147483647
 --- !u!65 &1219893580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55170,7 +55174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1633759179
 Transform:
   m_ObjectHideFlags: 0
@@ -58908,7 +58912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1734328415
 RectTransform:
   m_ObjectHideFlags: 0

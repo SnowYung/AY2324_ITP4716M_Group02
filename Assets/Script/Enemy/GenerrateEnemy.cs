@@ -9,28 +9,72 @@ public class GenerrateEnemy : MonoBehaviour
 
     public GameObject enemy;
 
+    public int i;
+
+    Vector3 position;
+
+    [SerializeField]
+    LayerMask layerMask;
+
     void Start()
     {
-        for (int i=0;  i<10; i++)
+        float radius = 1.5f;
+        Vector3 genPos;
+        Vector3 origin;
+
+        for (i=0;  i<10; i++)
         {
-            enemy =  Instantiate(M1Position, new Vector3((float)(Random.Range(-45, 45)), 0, (float)(Random.Range(-45, 45))), new Quaternion(0f, 0f, 0f, 0f), M1.transform);
-            //enemy.transform.parent = M1.transform;
-            
-            if (enemy.transform.position.y > 0 )
+            RaycastHit[] hitInfo;
+            bool success;
+
+            int counter = 0;
+            do
             {
-                Destroy(gameObject);
-                i -= 1;
+                genPos = new Vector3((float)(Random.Range(-45, 45)), 0, (float)(Random.Range(-45, 45)));
+                origin = genPos + Vector3.up * 20;
+                hitInfo = Physics.SphereCastAll(origin, radius, Vector3.down, 21f,layerMask);
+
+                counter++;
             }
+            while (hitInfo.Length!=1);
+
+            genPos = hitInfo[0].point;
+
+            //TO be delete start
+            GameObject GenPoint = new GameObject("Gen Point " + i);
+            GenPoint.transform.position = genPos;
+            //TO be delete end
+
+
+
+
+            enemy =  Instantiate(M1Position, genPos, new Quaternion(0f, 0f, 0f, 0f), M1.transform);
+            enemy.name = "M1" + i;
+            //enemy.transform.parent = M1.transform;
+
+            //position = enemy.transform.position;
+
+            //if (position.y > 0)
+            //{
+            //    Destroy(gameObject);
+            //    i -= 1;
+            //}
         }
     }
 
     void Update()
     {
-            //if (enemy.GetComponent<CharacterController>())
-            //{
-
-            //}
-
+        //position = transform.position;
+        //position.y = 0;
     }
+
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (position.y > 0)
+    //    {
+    //        position.y = 0;
+    //        transform.position = position;
+    //    }
+    //}
 
 }

@@ -16,7 +16,7 @@ public class NumText : MonoBehaviour
 
     private static void UpdateNumVisual()
     {
-        numText.text = num.ToString();
+        numText.text = num.ToString() + " ";
     }
 
     public static void UpdateNum(int value)
