@@ -41,8 +41,8 @@ public class GenerrateEnemy : MonoBehaviour
             genPos = hitInfo[0].point;
 
             //TO be delete start
-            GameObject GenPoint = new GameObject("Gen Point " + i);
-            GenPoint.transform.position = genPos;
+            //GameObject GenPoint = new GameObject("Gen Point " + i);
+            //GenPoint.transform.position = genPos;
             //TO be delete end
 
 
