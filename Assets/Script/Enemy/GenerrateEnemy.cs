@@ -50,31 +50,12 @@ public class GenerrateEnemy : MonoBehaviour
 
             enemy =  Instantiate(M1Position, genPos, new Quaternion(0f, 0f, 0f, 0f), M1.transform);
             enemy.name = "M1" + i;
-            //enemy.transform.parent = M1.transform;
-
-            //position = enemy.transform.position;
-
-            //if (position.y > 0)
-            //{
-            //    Destroy(gameObject);
-            //    i -= 1;
-            //}
         }
     }
 
     void Update()
     {
-        //position = transform.position;
-        //position.y = 0;
-    }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (position.y > 0)
-    //    {
-    //        position.y = 0;
-    //        transform.position = position;
-    //    }
-    //}
+    }
 
 }

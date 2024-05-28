@@ -17133,7 +17133,7 @@ GameObject:
   - component: {fileID: 495203889}
   - component: {fileID: 495203888}
   - component: {fileID: 495203887}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42097,7 +42097,7 @@ MonoBehaviour:
   i: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 119
 --- !u!65 &1219893580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55168,7 +55168,7 @@ GameObject:
   - component: {fileID: 1633759182}
   - component: {fileID: 1633759181}
   - component: {fileID: 1633759180}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
