@@ -17,9 +17,7 @@ public class SrPlayerHP : MonoBehaviour
     {
         if (PlayerHP.fillAmount == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
-            NumText.ResetNum();
+            Reset();
         }
     
 }
@@ -32,6 +30,13 @@ public class SrPlayerHP : MonoBehaviour
     //        //Debug.Log("HP reduced");
     //    }
     //}
+
+    public static void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
+        NumText.ResetNum();
+    }
 
     public void GetDamage(float damage)
     {

@@ -38,4 +38,11 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("UI");
     }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        MenuUI.gameObject.SetActive(false);
+        SrPlayerHP.Reset();
+    }
 }
