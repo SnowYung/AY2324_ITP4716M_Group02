@@ -11,6 +11,8 @@ public class GenerrateEnemy : MonoBehaviour
 
     public int i;
 
+    //public int l;
+
     Vector3 position;
 
     [SerializeField]
