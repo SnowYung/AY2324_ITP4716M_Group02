@@ -10,16 +10,9 @@ public class AudioGamingManager : MonoBehaviour
     [SerializeField]
     AudioClip backgroundMusic;
 
-    [SerializeField]
-    AudioClip enemyEffects;
-
-    [SerializeField]
-    GameObject enemy;
-
     void Start()
     {
         PlayBackGroundMusic();
-        PlayEnemyEffect();
     }
 
     public void PlayBackGroundMusic()
@@ -28,19 +21,9 @@ public class AudioGamingManager : MonoBehaviour
         Audio.Play();
     }
 
-    public void PlayEnemyEffect()
+    public void StopMusic()
     {
-        //GameObject.Find("Enemy");
-        //if ()
-        //{
-        //    Audio.clip = enemyEffects;
-        //    Audio.Play();
-        //}
-    }
-
-    private void Enemy(Vector3 pos)
-    {
-        Instantiate(enemy, pos, Quaternion.identity);
+        Audio.Stop();
     }
 
 }

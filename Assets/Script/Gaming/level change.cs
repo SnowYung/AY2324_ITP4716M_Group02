@@ -30,7 +30,7 @@ public class levelchange : MonoBehaviour
 
     }
 
-    public void Diff()
+    public void Hard()
     {
 
     }
