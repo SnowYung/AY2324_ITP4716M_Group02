@@ -34541,6 +34541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1002333183}
   - component: {fileID: 1002333182}
+  - component: {fileID: 1002333185}
   - component: {fileID: 1002333184}
   m_Layer: 0
   m_Name: Sound
@@ -34585,7 +34586,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 13b75fc6a40f0794cb8fb4c71ef428a6, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -34671,6 +34672,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1002333185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002333181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142e6864f7fe5964983644cdf158070b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 1002333184}
+  backgroundMusic: {fileID: 8300000, guid: 13b75fc6a40f0794cb8fb4c71ef428a6, type: 3}
+  enemyEffects: {fileID: 8300000, guid: 579cf943207675548b011d45179ab8ef, type: 3}
+  enemy: {fileID: 0}
 --- !u!1 &1003925954
 GameObject:
   m_ObjectHideFlags: 0
