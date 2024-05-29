@@ -16,7 +16,7 @@ public class SrM1HP : MonoBehaviour
     {
         if (M1HP.fillAmount == 0)
         {
-            GameObject.Find("Enermys").GetComponent<updataNum>().UpdateMark();
+            GameObject.Find("Enemys").GetComponent<updataNum>().UpdateMark();
             Destroy(gameObject);
             NumText.UpdateNum(1);
         }
