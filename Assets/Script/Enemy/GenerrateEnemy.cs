@@ -48,7 +48,7 @@ public class GenerrateEnemy : MonoBehaviour
             //TO be delete end
 
             enemy =  Instantiate(M1Position, genPos, new Quaternion(0f, 0f, 0f, 0f), M1.transform);
-            enemy.name = "M1" + i;
+            //enemy.name = "M1" + i;
         }
     }
 

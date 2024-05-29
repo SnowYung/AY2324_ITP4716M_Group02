@@ -7,8 +7,10 @@ public class EnemyAI : MonoBehaviour
 {
     private Transform Player;
     private float AttackArea = 30;
-    //int set = -90;
     private float speed = 5;
+    private float slowTime = 200;
+    
+    
 
     private CharacterController controller;
 
@@ -36,12 +38,18 @@ public class EnemyAI : MonoBehaviour
     }
     public void setspeed()
     {
-        for(int i = 1; i < 100; i++)
+        for(int timer=0 ; timer <slowTime;timer++)
         {
             speed = 1;
+            if(timer == slowTime-1)
+            {
+                speed = 5;
+                Debug.Log("321");
+            }
+            Debug.Log(timer);
         }
        
-       //Debug.Log("1");
+       
     }
 
 }
