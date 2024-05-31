@@ -7,9 +7,14 @@ public class DoorControll : MonoBehaviour
 
     private Animator anim;
 
+    public AudioClip DoorOpen;
+
+    AudioSource audio;
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -17,6 +22,7 @@ public class DoorControll : MonoBehaviour
         if (other.tag == "Player")
         {
             anim.SetTrigger("Open");
+            audio.PlayOneShot(DoorOpen);
             //Debug.Log(other.gameObject.name+" Open " + Time.time);
         }
     }

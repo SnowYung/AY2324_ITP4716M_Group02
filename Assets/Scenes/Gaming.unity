@@ -1490,6 +1490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &27892354
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3232,6 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &96850729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3881,6 +3883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &115543213
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,6 +4010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &115543220
 Animator:
   serializedVersion: 3
@@ -5501,6 +5505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &168958151
 Animator:
   serializedVersion: 3
@@ -5695,7 +5700,6 @@ GameObject:
   - component: {fileID: 174940609}
   - component: {fileID: 174940608}
   - component: {fileID: 174940610}
-  - component: {fileID: 174940615}
   - component: {fileID: 174940614}
   m_Layer: 0
   m_Name: Door (5)
@@ -5749,6 +5753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &174940610
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5840,7 +5845,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -5923,20 +5928,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &174940615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174940606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &176568285
 GameObject:
   m_ObjectHideFlags: 0
@@ -6081,6 +6072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &177126063
 Animator:
   serializedVersion: 3
@@ -9930,6 +9922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &289168388
 Animator:
   serializedVersion: 3
@@ -11055,6 +11048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &309815165
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11545,6 +11539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &329084270
 GameObject:
   m_ObjectHideFlags: 0
@@ -11706,6 +11701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &329932774
 Animator:
   serializedVersion: 3
@@ -12608,6 +12604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &371409030
 Animator:
   serializedVersion: 3
@@ -12784,6 +12781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &372596476
 Animator:
   serializedVersion: 3
@@ -13878,7 +13876,6 @@ GameObject:
   - component: {fileID: 410368786}
   - component: {fileID: 410368785}
   - component: {fileID: 410368787}
-  - component: {fileID: 410368792}
   - component: {fileID: 410368791}
   m_Layer: 0
   m_Name: Door (9)
@@ -13932,6 +13929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &410368787
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14023,7 +14021,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -14106,20 +14104,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &410368792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410368783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &414923207
 GameObject:
   m_ObjectHideFlags: 0
@@ -14168,6 +14152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &414923210
 Animator:
   serializedVersion: 3
@@ -14782,7 +14767,6 @@ GameObject:
   - component: {fileID: 437118263}
   - component: {fileID: 437118262}
   - component: {fileID: 437118264}
-  - component: {fileID: 437118269}
   - component: {fileID: 437118268}
   m_Layer: 0
   m_Name: Door (12)
@@ -14836,6 +14820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &437118264
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14927,7 +14912,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -15010,20 +14995,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &437118269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437118260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &440468593
 GameObject:
   m_ObjectHideFlags: 0
@@ -16155,6 +16126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &467655450
 Animator:
   serializedVersion: 3
@@ -16464,6 +16436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &474108182
 Animator:
   serializedVersion: 3
@@ -16565,6 +16538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &474549327
 Animator:
   serializedVersion: 3
@@ -17993,6 +17967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &511806531
 Animator:
   serializedVersion: 3
@@ -18275,6 +18250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!136 &519601339
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19014,6 +18990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &541242835
 Animator:
   serializedVersion: 3
@@ -19720,6 +19697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &561055978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20399,6 +20377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &569450453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20544,6 +20523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &569984253
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21027,6 +21007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &581388652
 GameObject:
   m_ObjectHideFlags: 0
@@ -21914,6 +21895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &603040751
 Animator:
   serializedVersion: 3
@@ -22236,6 +22218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &624396855
 Animator:
   serializedVersion: 3
@@ -23089,6 +23072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &656723167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24958,6 +24942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &706380243
 Animator:
   serializedVersion: 3
@@ -26313,6 +26298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &749984443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26924,6 +26910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &764228252
 Animator:
   serializedVersion: 3
@@ -27359,6 +27346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &775793004
 Animator:
   serializedVersion: 3
@@ -28102,6 +28090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &791869917
 GameObject:
   m_ObjectHideFlags: 0
@@ -28259,6 +28248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &791929087
 Animator:
   serializedVersion: 3
@@ -28516,7 +28506,6 @@ GameObject:
   - component: {fileID: 803339429}
   - component: {fileID: 803339428}
   - component: {fileID: 803339430}
-  - component: {fileID: 803339435}
   - component: {fileID: 803339434}
   m_Layer: 0
   m_Name: Door (3)
@@ -28570,6 +28559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &803339430
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28661,7 +28651,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -28744,20 +28734,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &803339435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803339426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &810672474
 GameObject:
   m_ObjectHideFlags: 0
@@ -29840,6 +29816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &842977170
 Animator:
   serializedVersion: 3
@@ -29985,6 +29962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &845452675
 Animator:
   serializedVersion: 3
@@ -30546,6 +30524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &870900730
 Animator:
   serializedVersion: 3
@@ -30916,6 +30895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!64 &873752113
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31122,7 +31102,6 @@ GameObject:
   - component: {fileID: 880347486}
   - component: {fileID: 880347485}
   - component: {fileID: 880347487}
-  - component: {fileID: 880347492}
   - component: {fileID: 880347491}
   m_Layer: 0
   m_Name: Door (13)
@@ -31176,6 +31155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &880347487
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31267,7 +31247,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -31350,20 +31330,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &880347492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880347483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &882537899
 GameObject:
   m_ObjectHideFlags: 0
@@ -33167,6 +33133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &952204282
 Animator:
   serializedVersion: 3
@@ -34530,6 +34497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &988203087
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35091,6 +35059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &1002333181
 GameObject:
   m_ObjectHideFlags: 0
@@ -36970,6 +36939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1059411172
 Animator:
   serializedVersion: 3
@@ -37582,6 +37552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1074704667
 Animator:
   serializedVersion: 3
@@ -38824,6 +38795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1118058350
 Animator:
   serializedVersion: 3
@@ -39305,6 +39277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1137478309
 Animator:
   serializedVersion: 3
@@ -39460,6 +39433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1138777875
 Animator:
   serializedVersion: 3
@@ -40171,6 +40145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &1152773861
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41695,6 +41670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1194846678
 Animator:
   serializedVersion: 3
@@ -42465,6 +42441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1216142203
 Animator:
   serializedVersion: 3
@@ -43099,6 +43076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1227683982
 Animator:
   serializedVersion: 3
@@ -43258,6 +43236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &1231888963
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44150,6 +44129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!64 &1261341889
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44295,6 +44275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!64 &1266852024
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45384,7 +45365,6 @@ GameObject:
   - component: {fileID: 1308503224}
   - component: {fileID: 1308503223}
   - component: {fileID: 1308503225}
-  - component: {fileID: 1308503230}
   - component: {fileID: 1308503229}
   m_Layer: 0
   m_Name: Door (6)
@@ -45438,6 +45418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1308503225
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -45529,7 +45510,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -45612,20 +45593,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1308503230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308503221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1309371882
 GameObject:
   m_ObjectHideFlags: 0
@@ -46286,7 +46253,6 @@ GameObject:
   - component: {fileID: 1341787921}
   - component: {fileID: 1341787920}
   - component: {fileID: 1341787922}
-  - component: {fileID: 1341787927}
   - component: {fileID: 1341787926}
   m_Layer: 0
   m_Name: Door (7)
@@ -46340,6 +46306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1341787922
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -46431,7 +46398,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -46514,20 +46481,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1341787927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341787918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1341833160
 GameObject:
   m_ObjectHideFlags: 0
@@ -46576,6 +46529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1341833163
 Animator:
   serializedVersion: 3
@@ -47878,6 +47832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1360522095
 Animator:
   serializedVersion: 3
@@ -48216,6 +48171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1365553651
 Animator:
   serializedVersion: 3
@@ -48617,6 +48573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1379772777
 Animator:
   serializedVersion: 3
@@ -49020,6 +48977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1401811135
 Animator:
   serializedVersion: 3
@@ -49645,6 +49603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1443237370
 Animator:
   serializedVersion: 3
@@ -49886,6 +49845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1446139768
 Animator:
   serializedVersion: 3
@@ -51401,7 +51361,6 @@ GameObject:
   - component: {fileID: 1488704355}
   - component: {fileID: 1488704354}
   - component: {fileID: 1488704356}
-  - component: {fileID: 1488704361}
   - component: {fileID: 1488704360}
   m_Layer: 0
   m_Name: Door
@@ -51436,6 +51395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!95 &1488704355
 Animator:
   serializedVersion: 3
@@ -51546,7 +51506,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -51629,20 +51589,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1488704361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488704352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1491551461
 GameObject:
   m_ObjectHideFlags: 0
@@ -51934,6 +51880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!64 &1496315703
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54265,7 +54212,6 @@ GameObject:
   - component: {fileID: 1591025646}
   - component: {fileID: 1591025645}
   - component: {fileID: 1591025647}
-  - component: {fileID: 1591025652}
   - component: {fileID: 1591025651}
   m_Layer: 0
   m_Name: Door (11)
@@ -54319,6 +54265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1591025647
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -54410,7 +54357,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -54493,20 +54440,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1591025652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1591025643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1598197541
 GameObject:
   m_ObjectHideFlags: 0
@@ -55528,6 +55461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &1615954652
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55753,7 +55687,6 @@ GameObject:
   - component: {fileID: 1621765398}
   - component: {fileID: 1621765397}
   - component: {fileID: 1621765399}
-  - component: {fileID: 1621765404}
   - component: {fileID: 1621765403}
   m_Layer: 0
   m_Name: Door (2)
@@ -55807,6 +55740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1621765399
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -55898,7 +55832,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -55981,20 +55915,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1621765404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621765395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1622545640
 GameObject:
   m_ObjectHideFlags: 0
@@ -56537,6 +56457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1633875880
 Animator:
   serializedVersion: 3
@@ -56936,6 +56857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1643893649
 Animator:
   serializedVersion: 3
@@ -57453,7 +57375,6 @@ GameObject:
   - component: {fileID: 1661256910}
   - component: {fileID: 1661256909}
   - component: {fileID: 1661256911}
-  - component: {fileID: 1661256916}
   - component: {fileID: 1661256915}
   m_Layer: 0
   m_Name: Door (1)
@@ -57507,6 +57428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1661256911
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -57598,7 +57520,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -57681,20 +57603,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1661256916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661256907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1661829054
 GameObject:
   m_ObjectHideFlags: 0
@@ -58695,6 +58603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &1673823702
 GameObject:
   m_ObjectHideFlags: 0
@@ -61075,6 +60984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1757283578
 Animator:
   serializedVersion: 3
@@ -61850,6 +61760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1784404361
 Animator:
   serializedVersion: 3
@@ -62830,6 +62741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1818161199
 Animator:
   serializedVersion: 3
@@ -62899,7 +62811,6 @@ GameObject:
   - component: {fileID: 1824133577}
   - component: {fileID: 1824133576}
   - component: {fileID: 1824133578}
-  - component: {fileID: 1824133583}
   - component: {fileID: 1824133582}
   m_Layer: 0
   m_Name: Door (8)
@@ -62953,6 +62864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1824133578
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -63044,7 +62956,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -63127,20 +63039,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1824133583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824133574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1826571319
 GameObject:
   m_ObjectHideFlags: 0
@@ -63623,7 +63521,6 @@ GameObject:
   - component: {fileID: 1839892132}
   - component: {fileID: 1839892131}
   - component: {fileID: 1839892133}
-  - component: {fileID: 1839892138}
   - component: {fileID: 1839892137}
   m_Layer: 0
   m_Name: Door (10)
@@ -63677,6 +63574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &1839892133
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -63768,7 +63666,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -63851,20 +63749,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1839892138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839892129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &1840100332
 GameObject:
   m_ObjectHideFlags: 0
@@ -64512,6 +64396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1848950694
 Animator:
   serializedVersion: 3
@@ -65768,6 +65653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1863006274
 Animator:
   serializedVersion: 3
@@ -66477,6 +66363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &1884014287
 GameObject:
   m_ObjectHideFlags: 0
@@ -67103,6 +66990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &1894628695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67422,6 +67310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1907486103
 Animator:
   serializedVersion: 3
@@ -69043,6 +68932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!1 &1969907814
 GameObject:
   m_ObjectHideFlags: 0
@@ -69702,6 +69592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &1995227701
 Animator:
   serializedVersion: 3
@@ -71227,6 +71118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!64 &2039039686
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71756,7 +71648,6 @@ GameObject:
   - component: {fileID: 2053776898}
   - component: {fileID: 2053776897}
   - component: {fileID: 2053776899}
-  - component: {fileID: 2053776904}
   - component: {fileID: 2053776903}
   m_Layer: 0
   m_Name: Door (4)
@@ -71810,6 +71701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 8300000, guid: b73f749b627b5f14782882e5e954b0a5, type: 3}
 --- !u!136 &2053776899
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -71901,7 +71793,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -71984,20 +71876,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2053776904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053776895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d666c7a20a0126747b6c71c6c683189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DoorOpen: {fileID: 8300000, guid: 98de26418178ca9438d97b92d89b6674, type: 3}
-  DoorClose: {fileID: 0}
 --- !u!1 &2054291205
 GameObject:
   m_ObjectHideFlags: 0
@@ -73173,6 +73051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!23 &2091860394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74537,6 +74416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88b9659cc6d7542bee5ea99ca0e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 0}
 --- !u!95 &2130680457
 Animator:
   serializedVersion: 3
