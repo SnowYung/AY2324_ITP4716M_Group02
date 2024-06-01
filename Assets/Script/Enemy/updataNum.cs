@@ -19,6 +19,7 @@ public class updataNum : MonoBehaviour
             {
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
                 NumText.ResetNum();
+                GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
             }
         }
     }

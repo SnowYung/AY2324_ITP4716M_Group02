@@ -34,22 +34,15 @@ public class EnemyAI : MonoBehaviour
             transform.LookAt(targetPos);
             controller.Move(gameObject.transform.forward * speed * Time.deltaTime);
         }
-        
+        //speed = 5;
     }
     public void setspeed()
     {
-        for(int timer=0 ; timer <slowTime;timer++)
+        for (int timer = 0; timer < slowTime; timer++)
         {
             speed = 1;
-            if(timer == slowTime-1)
-            {
-                speed = 5;
-                Debug.Log("321");
-            }
-            Debug.Log(timer);
+
         }
-       
-       
     }
 
 }
