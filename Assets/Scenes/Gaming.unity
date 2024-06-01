@@ -75023,7 +75023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeftClick: {fileID: 8300000, guid: 84081db92b6228040844a953e8108f88, type: 3}
-  RightClick: {fileID: 0}
+  RightClick: {fileID: 8300000, guid: 763bf5a12bc6c574190a3b699664c700, type: 3}
 --- !u!1 &1360980345779254027
 GameObject:
   m_ObjectHideFlags: 0
