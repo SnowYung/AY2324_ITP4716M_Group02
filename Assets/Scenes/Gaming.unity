@@ -75022,8 +75022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc48ded06d2e18442b0f69d532abead6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftClick: {fileID: 8300000, guid: 84081db92b6228040844a953e8108f88, type: 3}
-  RightClick: {fileID: 8300000, guid: 763bf5a12bc6c574190a3b699664c700, type: 3}
+  LeftClick: {fileID: 8300000, guid: 544535fce43c7644fb322d993a2c9b87, type: 3}
+  RightClick: {fileID: 8300000, guid: a3958bc1b48898a42a2e6f25315f8d6d, type: 3}
 --- !u!1 &1360980345779254027
 GameObject:
   m_ObjectHideFlags: 0
