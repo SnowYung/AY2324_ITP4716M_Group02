@@ -11,7 +11,7 @@ public class Sound : MonoBehaviour
     void Start()
     {
         sound = GetComponent<AudioSource>();
-        sound.volume = 1;
+        sound.volume = 0.5f;
         preVolume = sound.volume;
     }
 
