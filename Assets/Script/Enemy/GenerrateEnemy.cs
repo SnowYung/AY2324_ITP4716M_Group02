@@ -11,8 +11,6 @@ public class GenerrateEnemy : MonoBehaviour
 
     public int i;
 
-    //public int l;
-
     Vector3 position;
 
     [SerializeField]
@@ -24,7 +22,9 @@ public class GenerrateEnemy : MonoBehaviour
         Vector3 genPos;
         Vector3 origin;
 
-        for (i=0;  i<10; i++)
+        int NumOfEnemy = GetNumOfEnemy();
+
+        for (i=0;  i<NumOfEnemy; i++)
         {
             RaycastHit[] hitInfo;
             bool success;
@@ -56,5 +56,24 @@ public class GenerrateEnemy : MonoBehaviour
     {
 
     }
+
+    public static int GetNumOfEnemy()
+    {
+        switch(levelManager.GetLevel())
+        {
+            case Level.Easy:
+                Debug.Log("Easy");
+                return 10;
+            case Level.Normal:
+                Debug.Log("Normal");
+                return 15;
+            case Level.Hard:
+                Debug.Log("Hard");
+                return 20;
+            default:
+                Debug.LogError("Level is invalid");
+                return 0;
+        }
+    } 
 
 }

@@ -7,8 +7,8 @@ public class EnemyAI : MonoBehaviour
 {
     private Transform Player;
     private float AttackArea = 30;
-    private float speed = 5;
     private float slowTime = 200;
+    int speed = GetSpeed();
 
     private CharacterController controller;
 
@@ -34,7 +34,8 @@ public class EnemyAI : MonoBehaviour
         }
         //speed = 5;
     }
-    public void setspeed()
+
+    public void Setspeed()
     {
         for (int timer = 0; timer < slowTime; timer++)
         {
@@ -42,8 +43,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    //public void speed()
-    //{
-    //    speed = levelchange.speed;
-    //}
+    public static int GetSpeed()
+    {
+        switch (levelManager.GetLevel())
+        {
+            case Level.Easy:
+                return 5;
+            case Level.Normal:
+                return 10;
+            case Level.Hard:
+                return 15;
+            default:
+                Debug.LogError("Level is invalid");
+                return 0;
+        }
+    }
 }

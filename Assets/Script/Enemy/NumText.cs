@@ -5,29 +5,30 @@ using UnityEngine.UI;
 
 public class NumText : MonoBehaviour
 {
-    private static int num = 10;
+    private static int Num;
     private static Text numText;
 
     void Start()
     {
+        int Num = GenerrateEnemy.GetNumOfEnemy();
         numText = GetComponent<Text>();
         UpdateNumVisual();
     }
 
     private static void UpdateNumVisual()
     {
-        numText.text = num.ToString() + " ";
+        numText.text = Num.ToString() + " ";
     }
 
     public static void UpdateNum(int value)
     {
-        num -= value;
+        Num -= value;
         UpdateNumVisual();
     }
 
     public static void ResetNum()
     {
-        num = 10;
+        Num = 10;
         UpdateNumVisual();
     }
 }

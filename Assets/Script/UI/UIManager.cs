@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public enum Language { English, Chinese }
-public class GameManager : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     [SerializeField] StorySO[] storySos;
     int storyIndex;

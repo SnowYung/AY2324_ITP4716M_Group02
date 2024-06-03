@@ -12,7 +12,7 @@ public class StorySO : ScriptableObject
 
     public string GetDialogue()
     {
-        switch (GameManager.GetLanguage())
+        switch (UIManager.GetLanguage())
         {
             case Language.English:
                 return englishDialogue;
