@@ -9,8 +9,6 @@ public class EnemyAI : MonoBehaviour
     private float AttackArea = 30;
     private float speed = 5;
     private float slowTime = 200;
-    
-    
 
     private CharacterController controller;
 
@@ -41,8 +39,11 @@ public class EnemyAI : MonoBehaviour
         for (int timer = 0; timer < slowTime; timer++)
         {
             speed = 1;
-
         }
     }
 
+    //public void speed()
+    //{
+    //    speed = levelchange.speed;
+    //}
 }

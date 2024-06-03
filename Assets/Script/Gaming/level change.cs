@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class levelchange : MonoBehaviour
 {
-    
+    public GameObject levelUI;
+
+    public int speed = 0;
+
     void Start()
     {
-        
+        Time.timeScale = 0f;
+        levelUI.gameObject.SetActive(true);
     }
 
     
@@ -16,21 +20,21 @@ public class levelchange : MonoBehaviour
         
     }
 
-    public void Easy()
+    void Easy()
     {
         EnemyAI[] array = FindObjectsOfType<EnemyAI>();
         foreach (EnemyAI enemy in array)
         {
-            //enemy.setspeed;
+            //enemy.speed = 5;
         }
     }
 
-    public void Normal()
+    void Normal()
     {
 
     }
 
-    public void Hard()
+    void Hard()
     {
 
     }
