@@ -1,14 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
     private Transform Player;
     private float AttackArea = 30;
     private float slowTime = 200;
-    int speed = GetSpeed();
+
+    int speed;
+    bool slowed;
+    float slowEndTime;
 
     private CharacterController controller;
 
@@ -22,40 +22,35 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         Vector3 targetPos = Player.position;
-
         targetPos.y = transform.position.y;
 
-        float dis = Vector3.Distance(targetPos, transform.position);
+        if (Time.time >= slowEndTime)
+            slowed = false;
 
+        int realSpeed = speed;
+        if (slowed)
+            realSpeed = 1;
+
+        float dis = Vector3.Distance(targetPos, transform.position);
         if (dis <= AttackArea)
         {
             transform.LookAt(targetPos);
-            controller.Move(gameObject.transform.forward * speed * Time.deltaTime);
+            controller.Move(gameObject.transform.forward * realSpeed * Time.deltaTime);
         }
         //speed = 5;
     }
 
-    public void Setspeed()
+    public void SetMaxSpeed(int value)
     {
-        for (int timer = 0; timer < slowTime; timer++)
-        {
-            speed = 1;
-        }
+        speed = value;
     }
 
-    public static int GetSpeed()
+    public void TriggerSlow()
     {
-        switch (levelManager.GetLevel())
-        {
-            case Level.Easy:
-                return 5;
-            case Level.Normal:
-                return 10;
-            case Level.Hard:
-                return 15;
-            default:
-                Debug.LogError("Level is invalid");
-                return 0;
-        }
+        if (slowed)
+            return;
+
+        slowed = true;
+        slowEndTime = Time.time + 2;
     }
 }

@@ -45784,6 +45784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelUI: {fileID: 1768577003}
   fpsController: {fileID: 1845700686}
+  generateControl: {fileID: 1219893579}
 --- !u!1 &1307843103
 GameObject:
   m_ObjectHideFlags: 0

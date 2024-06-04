@@ -16,13 +16,11 @@ public class GenerrateEnemy : MonoBehaviour
     [SerializeField]
     LayerMask layerMask;
 
-    void Start()
+    public void Generrate(int NumOfEnemy, int moveSpeed)
     {
         float radius = 1.5f;
         Vector3 genPos;
         Vector3 origin;
-
-        int NumOfEnemy = GetNumOfEnemy();
 
         for (i=0;  i<NumOfEnemy; i++)
         {
@@ -48,32 +46,29 @@ public class GenerrateEnemy : MonoBehaviour
             //TO be delete end
 
             enemy =  Instantiate(M1Position, genPos, new Quaternion(0f, 0f, 0f, 0f), M1.transform);
+            EnemyAI enemyAI = enemy.GetComponent<EnemyAI>();
+            enemyAI.SetMaxSpeed(moveSpeed);
             //enemy.name = "M1" + i;
         }
     }
 
-    void Update()
-    {
-
-    }
-
-    public static int GetNumOfEnemy()
-    {
-        switch(levelManager.GetLevel())
-        {
-            case Level.Easy:
-                Debug.Log("Easy");
-                return 10;
-            case Level.Normal:
-                Debug.Log("Normal");
-                return 15;
-            case Level.Hard:
-                Debug.Log("Hard");
-                return 20;
-            default:
-                Debug.LogError("Level is invalid");
-                return 0;
-        }
-    } 
+    //public static int GetNumOfEnemy()
+    //{
+    //    switch(levelManager.GetLevel())
+    //    {
+    //        case Level.Easy:
+    //            Debug.Log("Easy");
+    //            return 10;
+    //        case Level.Normal:
+    //            Debug.Log("Normal");
+    //            return 15;
+    //        case Level.Hard:
+    //            Debug.Log("Hard");
+    //            return 20;
+    //        default:
+    //            Debug.LogError("Level is invalid");
+    //            return 0;
+    //    }
+    //} 
 
 }

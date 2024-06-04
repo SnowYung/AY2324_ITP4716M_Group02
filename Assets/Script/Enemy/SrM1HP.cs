@@ -18,7 +18,6 @@ public class SrM1HP : MonoBehaviour
         {
             GameObject.Find("Enermys").GetComponent<updataNum>().UpdateMark();
             Destroy(gameObject);
-            NumText.UpdateNum(1);
         }
     }
     public Image M1HP;
@@ -27,7 +26,7 @@ public class SrM1HP : MonoBehaviour
         if (other.gameObject.name == "PlayerWeapon")
         {
             M1HP.fillAmount -= 0.1f;
-            GetComponent<EnemyAI>().Setspeed();
+            GetComponent<EnemyAI>().TriggerSlow();
         }
     }
 }

@@ -12,6 +12,7 @@ public class levelManager : MonoBehaviour
     private static Level level;
 
     public FirstPersonController fpsController;
+    public GenerrateEnemy generateControl;
 
     public static Level GetLevel()
     {
@@ -35,6 +36,7 @@ public class levelManager : MonoBehaviour
     public void Easy()
     {
         level = Level.Easy;
+        generateControl.Generrate(10, 5);
         Time.timeScale = 1f;
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
@@ -43,6 +45,7 @@ public class levelManager : MonoBehaviour
     public void Normal()
     {
         level = Level.Normal;
+        generateControl.Generrate(15, 10);
         Time.timeScale = 1f;
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
@@ -51,6 +54,7 @@ public class levelManager : MonoBehaviour
     public void Hard()
     {
         level = Level.Hard;
+        generateControl.Generrate(20, 15);
         Time.timeScale = 1f;
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);

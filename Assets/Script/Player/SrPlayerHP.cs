@@ -15,7 +15,7 @@ public class SrPlayerHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHP.fillAmount == 0)
+        if (PlayerHP.fillAmount  < 0.1)
         {
             Reset();
         }
@@ -35,7 +35,6 @@ public class SrPlayerHP : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
-        NumText.ResetNum();
     }
 
     public void GetDamage(float damage)

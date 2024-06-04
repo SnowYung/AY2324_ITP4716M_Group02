@@ -18,7 +18,6 @@ public class updataNum : MonoBehaviour
             if(timer > fadeDuration + 2f)
             {
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
-                NumText.ResetNum();
                 GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
             }
         }
