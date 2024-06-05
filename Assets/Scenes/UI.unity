@@ -1709,7 +1709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36f551fe60ad544196dbf667ac970f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 5
   nextButton: {fileID: 1309090205}
 --- !u!1 &976989555
 GameObject:

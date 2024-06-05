@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class UITimer : MonoBehaviour
 {
     [SerializeField]
     float time = 5f;

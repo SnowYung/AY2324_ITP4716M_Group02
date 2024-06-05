@@ -6,7 +6,7 @@ public class EnemyAI : MonoBehaviour
     private float AttackArea = 30;
     private float slowTime = 200;
 
-    int speed;
+    float speed;
     bool slowed;
     float slowEndTime;
 
@@ -27,7 +27,7 @@ public class EnemyAI : MonoBehaviour
         if (Time.time >= slowEndTime)
             slowed = false;
 
-        int realSpeed = speed;
+        float realSpeed = speed;
         if (slowed)
             realSpeed = 1;
 
@@ -40,7 +40,7 @@ public class EnemyAI : MonoBehaviour
         //speed = 5;
     }
 
-    public void SetMaxSpeed(int value)
+    public void SetMaxSpeed(float value)
     {
         speed = value;
     }

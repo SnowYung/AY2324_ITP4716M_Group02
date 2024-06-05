@@ -16,7 +16,7 @@ public class GenerrateEnemy : MonoBehaviour
     [SerializeField]
     LayerMask layerMask;
 
-    public void Generrate(int NumOfEnemy, int moveSpeed)
+    public void Generrate(int NumOfEnemy, float moveSpeed)
     {
         float radius = 1.5f;
         Vector3 genPos;
@@ -51,24 +51,5 @@ public class GenerrateEnemy : MonoBehaviour
             //enemy.name = "M1" + i;
         }
     }
-
-    //public static int GetNumOfEnemy()
-    //{
-    //    switch(levelManager.GetLevel())
-    //    {
-    //        case Level.Easy:
-    //            Debug.Log("Easy");
-    //            return 10;
-    //        case Level.Normal:
-    //            Debug.Log("Normal");
-    //            return 15;
-    //        case Level.Hard:
-    //            Debug.Log("Hard");
-    //            return 20;
-    //        default:
-    //            Debug.LogError("Level is invalid");
-    //            return 0;
-    //    }
-    //} 
 
 }

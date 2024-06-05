@@ -16,7 +16,6 @@ public class levelManager : MonoBehaviour
 
     public static Level GetLevel()
     {
-        Debug.Log("level");
         return level;
     }
 
@@ -36,7 +35,7 @@ public class levelManager : MonoBehaviour
     public void Easy()
     {
         level = Level.Easy;
-        generateControl.Generrate(10, 5);
+        generateControl.Generrate((int)Random.Range(10, 20), (float)Random.Range(5, 9));
         Time.timeScale = 1f;
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
@@ -45,7 +44,7 @@ public class levelManager : MonoBehaviour
     public void Normal()
     {
         level = Level.Normal;
-        generateControl.Generrate(15, 10);
+        generateControl.Generrate((int)Random.Range(21, 31), (float)Random.Range(10, 14));
         Time.timeScale = 1f;
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
@@ -54,25 +53,9 @@ public class levelManager : MonoBehaviour
     public void Hard()
     {
         level = Level.Hard;
-        generateControl.Generrate(20, 15);
+        generateControl.Generrate((int)Random.Range(32, 42), (float)Random.Range(15, 19));
         Time.timeScale = 1f;
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
     }
-
-    //public void SetEasy()
-    //{
-    //    level = Level.Easy;
-    //}
-
-    //public void SetNormal()
-    //{
-    //    level = Level.Normal;
-    //}
-
-    //public void SetHard()
-    //{
-    //    level = Level.Hard;
-    //}
-
 }
