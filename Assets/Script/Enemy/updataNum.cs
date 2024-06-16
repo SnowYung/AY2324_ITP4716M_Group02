@@ -5,21 +5,19 @@ using UnityEngine.UI;
 public class updataNum : MonoBehaviour
 {
     int Mark = 0;
-    public CanvasGroup BackGroundUI;
+    public CanvasGroup WinUI;
     public Timer gameplayTimer;
     float timer;
     float fadeDuration = 1f;
 
-    public int NumofEnemy;
-
     void Update()
     {
-        if (Mark == NumofEnemy)
+        if (Mark == 10)
         {
             gameplayTimer.Stop();
 
             timer += Time.deltaTime;
-            BackGroundUI.alpha = timer / fadeDuration;
+            WinUI.alpha = timer / fadeDuration;
             if(timer > fadeDuration + 2f)
             {
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
