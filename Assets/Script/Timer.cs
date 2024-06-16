@@ -1,17 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    bool playing = false;
     float time = 0;
 
-    float stoptime;
-
     Text text;
-
-    public CanvasGroup GameWin;
 
     void Start()
     {
@@ -20,20 +15,25 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (GameWin)
-        {
+        if (playing)
+            time += Time.deltaTime;
 
-            text.text = Mathf.Floor(time).ToString("00");
-        }
+        text.text = time.ToString("00.00");
     }
 
-    public void Play()
+    public void Restart()
     {
-        time += Time.deltaTime;
+        time = 0;
+        playing = true;
     }
 
     public void Stop()
     {
-        stoptime = time;
+        playing = false;
+    }
+
+    public float getTime()
+    {
+        return time;
     }
 }

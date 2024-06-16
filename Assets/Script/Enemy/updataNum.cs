@@ -6,13 +6,18 @@ public class updataNum : MonoBehaviour
 {
     int Mark = 0;
     public CanvasGroup BackGroundUI;
+    public Timer gameplayTimer;
     float timer;
     float fadeDuration = 1f;
 
+    public int NumofEnemy;
+
     void Update()
     {
-      if (Mark == 10)
+        if (Mark == NumofEnemy)
         {
+            gameplayTimer.Stop();
+
             timer += Time.deltaTime;
             BackGroundUI.alpha = timer / fadeDuration;
             if(timer > fadeDuration + 2f)

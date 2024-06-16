@@ -10,7 +10,7 @@ public class EnemyWeapon : MonoBehaviour
     {
         if (other.gameObject.name == "FPSController")
         {
-            other.GetComponent<SrPlayerHP>().GetDamage(0.2f);
+            other.GetComponent<SrPlayerHP>().TakeDamage(0.2f);
         }
     }
 }

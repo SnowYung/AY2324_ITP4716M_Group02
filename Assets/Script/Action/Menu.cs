@@ -42,7 +42,6 @@ public class Menu : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        MenuUI.gameObject.SetActive(false);
-        SrPlayerHP.Reset();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
