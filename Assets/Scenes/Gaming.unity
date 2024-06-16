@@ -22311,7 +22311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bd31cce8f7f6c4a823febd3ee6b1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackGroundUI: {fileID: 1086045827}
+  WinUI: {fileID: 1086045827}
   gameplayTimer: {fileID: 2119668906}
 --- !u!114 &612707921
 MonoBehaviour:
