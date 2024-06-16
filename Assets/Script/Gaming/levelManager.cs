@@ -31,7 +31,7 @@ public class levelManager : MonoBehaviour
     
     void Update()
     {
-        if (playerHP.GetHP() <= 0.0)
+        if (playerHP.GetHP() < 0.1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             return;
