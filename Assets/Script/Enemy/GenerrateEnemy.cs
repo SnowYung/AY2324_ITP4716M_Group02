@@ -11,7 +11,7 @@ public class GenerrateEnemy : MonoBehaviour
 
     public int i;
 
-    //public int Num;
+    public static int Num = 1;
 
     Vector3 position;
 
@@ -20,7 +20,8 @@ public class GenerrateEnemy : MonoBehaviour
 
     public void Generrate(int NumOfEnemy, float moveSpeed)
     {
-        //Num = NumOfEnemy;
+        Num = NumOfEnemy;
+        Debug.Log("Num =" + Num);
         float radius = 1.5f;
         Vector3 genPos;
         Vector3 origin;
@@ -54,10 +55,5 @@ public class GenerrateEnemy : MonoBehaviour
             //enemy.name = "M1" + i;
         }
     }
-
-    //public int GetNum()
-    //{
-    //    return Num;
-    //}
 
 }

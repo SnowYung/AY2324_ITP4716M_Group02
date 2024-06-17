@@ -21,10 +21,11 @@ public class AudioGamingManager : MonoBehaviour
         Audio.Play();
     }
 
-    public void StopMusic()
-    {
+     public void StopMusic()
+     {
         Audio.Stop();
-    }
+        Debug.Log("Stop");
+     }
 
 }
 

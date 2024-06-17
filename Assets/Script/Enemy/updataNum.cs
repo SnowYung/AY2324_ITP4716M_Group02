@@ -10,18 +10,30 @@ public class updataNum : MonoBehaviour
     float timer;
     float fadeDuration = 1f;
 
+    public void Start()
+    {
+
+    }
     void Update()
     {
-        if (Mark == 10)
+        //if(Mark != GenerrateEnemy.Num)
+        //{
+        //    WinUI.alpha = 0;
+        //    GameObject.Find("Sound").GetComponent<AudioGamingManager>().PlayBackGroundMusic();
+
+        //}
+        if (Mark == GenerrateEnemy.Num)
         {
             gameplayTimer.Stop();
 
             timer += Time.deltaTime;
             WinUI.alpha = timer / fadeDuration;
-            if(timer > fadeDuration + 2f)
+
+            GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
+
+            if (timer > fadeDuration + 2f)
             {
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
-                GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
             }
         }
     }
