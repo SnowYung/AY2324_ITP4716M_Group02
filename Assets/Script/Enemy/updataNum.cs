@@ -16,12 +16,6 @@ public class updataNum : MonoBehaviour
     }
     void Update()
     {
-        //if(Mark != GenerrateEnemy.Num)
-        //{
-        //    WinUI.alpha = 0;
-        //    GameObject.Find("Sound").GetComponent<AudioGamingManager>().PlayBackGroundMusic();
-
-        //}
         if (Mark == GenerrateEnemy.Num)
         {
             gameplayTimer.Stop();

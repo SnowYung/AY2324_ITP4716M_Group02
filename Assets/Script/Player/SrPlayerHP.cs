@@ -29,4 +29,9 @@ public class SrPlayerHP : MonoBehaviour
     {
         return PlayerHP.fillAmount;
     }
+
+    public void ResetHP()
+    {
+        PlayerHP.fillAmount = 1;
+    }
 }
