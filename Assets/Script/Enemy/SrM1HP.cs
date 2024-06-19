@@ -6,11 +6,7 @@ using UnityEngine.UI;
 
 public class SrM1HP : MonoBehaviour
 {
-
-    void Start()
-    {
-        
-    }
+    public Image M1HP;
 
     void Update()
     {
@@ -20,7 +16,7 @@ public class SrM1HP : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public Image M1HP;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "PlayerWeapon")
