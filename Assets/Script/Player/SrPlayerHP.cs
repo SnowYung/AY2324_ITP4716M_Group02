@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class SrPlayerHP : MonoBehaviour
 {
     public Image PlayerHP;
+    public Transform Transform;
+    int x, y, z;
 
     //public void OnTriggerEnter(Collider other)
     //{
@@ -33,5 +35,16 @@ public class SrPlayerHP : MonoBehaviour
     public void ResetHP()
     {
         PlayerHP.fillAmount = 1;
+    }
+
+    public void TransformA( )
+    {
+        //float x = gameObject.GetComponent<NewBehaviourScript>().transform.position.x;
+        //float y = gameObject.GetComponent<NewBehaviourScript>().transform.position.y;
+        //float z = gameObject.GetComponent<NewBehaviourScript>().transform.position.z;
+        //y = gameObject.GetComponent<NewBehaviourScript>().EndTP.y;
+        //Transform = GetComponent<Transform>();
+
+
     }
 }

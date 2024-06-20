@@ -59,11 +59,4 @@ public class GenerrateEnemy : MonoBehaviour
         }
     }
 
-    public void ResetEnemy()
-    {
-        for (i = 0; i != Num; i++)
-        {
-            Destroy(gameObject);
-        }
-    }
 }

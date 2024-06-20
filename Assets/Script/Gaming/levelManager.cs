@@ -21,7 +21,9 @@ public class levelManager : MonoBehaviour
     float time;
     float fadeDuration = 1f;
 
-    public Vector3 PlayerPos;
+    Vector3 startpos;
+
+    public CharacterController rb;
 
     public static Level GetLevel()
     {
@@ -34,8 +36,8 @@ public class levelManager : MonoBehaviour
         levelUI.gameObject.SetActive(true);
         fpsController.SetCursorVisibility(false);
         playerHP = fpsController.GetComponent<SrPlayerHP>();
-        PlayerPos = new Vector3(-43, 3, 26);
-        transform.position = PlayerPos;
+        rb = fpsController.GetComponent<CharacterController>();
+        startpos = fpsController.transform.position;
     }
 
 
@@ -51,16 +53,25 @@ public class levelManager : MonoBehaviour
             if (time > fadeDuration + 2f)
             {
                 LoseUI.alpha = 0;
-                fpsController.enabled = false;
-                fpsController.transform.position = PlayerPos;
-                fpsController.enabled = true;
-                //generateControl.ResetEnemy();
-                //generateControl.Generrate(GenerrateEnemy.Num, GenerrateEnemy.Speed);
+                rb.enabled = false;
+                fpsController.transform.position = startpos;
+
+                if (fpsController.transform.position == startpos)
+                {
+                    rb.enabled = true; 
+                }
+
+                GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (GameObject M1 in enemy)
+                {
+                    Destroy(M1);
+                    Debug.Log(enemy.Length);
+                }
+
+                generateControl.Generrate(GenerrateEnemy.Num, GenerrateEnemy.Speed);
                 timer.Restart();
                 playerHP.ResetHP();
-                return;
             }
-            return;
         }
     }
 

@@ -41,5 +41,5 @@ public class updataNum : MonoBehaviour
     {
         Mark = 0;
     }
-
+    
 }
