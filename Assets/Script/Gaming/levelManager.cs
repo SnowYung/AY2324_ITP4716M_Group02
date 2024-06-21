@@ -23,7 +23,10 @@ public class levelManager : MonoBehaviour
 
     Vector3 startpos;
 
-    public CharacterController rb;
+    //public GameObject[] objects;
+    //public Transform[] pos;
+
+    private CharacterController rb;
 
     public static Level GetLevel()
     {
@@ -104,4 +107,12 @@ public class levelManager : MonoBehaviour
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
     }
+
+    //public void Ins_Objs()
+    //{
+    //    int Ramdom_objects = Random.Range(0, objects.Length);
+    //    int Ramdom_pos = Random.Range(0, pos.Length);
+
+    //    Instantiate(objects[Ramdom_objects], pos[Ramdom_pos].transform.position, pos[Ramdom_pos].transform.rotation);
+    //}
 }

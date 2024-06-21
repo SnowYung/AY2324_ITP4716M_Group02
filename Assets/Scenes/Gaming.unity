@@ -45790,7 +45790,17 @@ MonoBehaviour:
   generateControl: {fileID: 1219893579}
   timer: {fileID: 2119668906}
   LoseUI: {fileID: 1607850889}
-  rb: {fileID: 0}
+  objects:
+  - {fileID: 1856986542}
+  pos:
+  - {fileID: 146699042}
+  - {fileID: 789563079}
+  - {fileID: 765362860}
+  - {fileID: 1061084997}
+  - {fileID: 1887434516}
+  - {fileID: 1179126341}
+  - {fileID: 896317905}
+  - {fileID: 1977618519}
 --- !u!1 &1307843103
 GameObject:
   m_ObjectHideFlags: 0
@@ -62062,7 +62072,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1761290276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65922,7 +65932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856986542}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -43, y: 3, z: 26}
+  m_LocalPosition: {x: -43, y: 4.88, z: 26}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 1856553356}
