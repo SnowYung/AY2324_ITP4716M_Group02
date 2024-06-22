@@ -22,9 +22,9 @@ public class GenerrateEnemy : MonoBehaviour
     public void Generrate(int NumOfEnemy, float moveSpeed)
     {
         Num = NumOfEnemy;
-        Debug.Log("Num = " + Num);
+        //Debug.Log("Num = " + Num);
         Speed = moveSpeed;
-        Debug.Log("Speed = " + Speed);
+        //Debug.Log("Speed = " + Speed);
         float radius = 1.5f;
         Vector3 genPos;
         Vector3 origin;

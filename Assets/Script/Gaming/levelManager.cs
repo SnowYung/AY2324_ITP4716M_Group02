@@ -23,9 +23,7 @@ public class levelManager : MonoBehaviour
 
     Vector3 startpos;
 
-    //public GameObject[] objects;
-    //public Transform[] pos;
-
+    public Transform[] pos;
     private CharacterController rb;
 
     public static Level GetLevel()
@@ -40,7 +38,7 @@ public class levelManager : MonoBehaviour
         fpsController.SetCursorVisibility(false);
         playerHP = fpsController.GetComponent<SrPlayerHP>();
         rb = fpsController.GetComponent<CharacterController>();
-        startpos = fpsController.transform.position;
+        SetPos();
     }
 
 
@@ -49,29 +47,17 @@ public class levelManager : MonoBehaviour
         if (playerHP.GetHP() < 0.1)
         {
             timer.Stop();
-
             time += Time.deltaTime;
             LoseUI.alpha = time / fadeDuration;
 
             if (time > fadeDuration + 2f)
             {
                 LoseUI.alpha = 0;
-                rb.enabled = false;
-                fpsController.transform.position = startpos;
 
-                if (fpsController.transform.position == startpos)
-                {
-                    rb.enabled = true; 
-                }
+                SetPos();
 
-                GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
-                foreach (GameObject M1 in enemy)
-                {
-                    Destroy(M1);
-                    Debug.Log(enemy.Length);
-                }
+                SetEnemy();
 
-                generateControl.Generrate(GenerrateEnemy.Num, GenerrateEnemy.Speed);
                 timer.Restart();
                 playerHP.ResetHP();
             }
@@ -108,11 +94,35 @@ public class levelManager : MonoBehaviour
         fpsController.SetCursorVisibility(true);
     }
 
-    //public void Ins_Objs()
-    //{
-    //    int Ramdom_objects = Random.Range(0, objects.Length);
-    //    int Ramdom_pos = Random.Range(0, pos.Length);
+    public void Pos()
+    {
+        int SP = Random.Range(0, pos.Length);
+        startpos = pos[SP].position;
+        startpos.y += 5;
+        //Debug.Log(startpos);
+    }
 
-    //    Instantiate(objects[Ramdom_objects], pos[Ramdom_pos].transform.position, pos[Ramdom_pos].transform.rotation);
-    //}
+    public void SetPos()
+    {
+        rb.enabled = false;
+        Pos();
+        fpsController.transform.position = startpos;
+
+        if (fpsController.transform.position == startpos)
+        {
+            rb.enabled = true;
+        }
+    }
+
+    public void SetEnemy()
+    {
+        GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject M1 in enemy)
+        {
+            Destroy(M1);
+            //Debug.Log(enemy.Length);
+        }
+
+        generateControl.Generrate(GenerrateEnemy.Num, GenerrateEnemy.Speed);
+    }
 }

@@ -45790,8 +45790,6 @@ MonoBehaviour:
   generateControl: {fileID: 1219893579}
   timer: {fileID: 2119668906}
   LoseUI: {fileID: 1607850889}
-  objects:
-  - {fileID: 1856986542}
   pos:
   - {fileID: 146699042}
   - {fileID: 789563079}
