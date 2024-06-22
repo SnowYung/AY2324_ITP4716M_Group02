@@ -8,6 +8,8 @@ public class SrM1HP : MonoBehaviour
 {
     public Image M1HP;
 
+    public static float HP;
+
     void Update()
     {
         if (M1HP.fillAmount <= 0)
@@ -23,7 +25,7 @@ public class SrM1HP : MonoBehaviour
     {
         if (other.gameObject.name == "PlayerWeapon")
         {
-            M1HP.fillAmount -= 0.1f;
+            M1HP.fillAmount -= HP;
             GetComponent<EnemyAI>().TriggerSlow();
         }
     }

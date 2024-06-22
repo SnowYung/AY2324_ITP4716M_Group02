@@ -47,17 +47,15 @@ public class levelManager : MonoBehaviour
         if (playerHP.GetHP() < 0.1)
         {
             timer.Stop();
+            GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
             time += Time.deltaTime;
             LoseUI.alpha = time / fadeDuration;
 
             if (time > fadeDuration + 2f)
             {
                 LoseUI.alpha = 0;
-
                 SetPos();
-
                 SetEnemy();
-
                 timer.Restart();
                 playerHP.ResetHP();
             }
@@ -70,6 +68,8 @@ public class levelManager : MonoBehaviour
         generateControl.Generrate((int)Random.Range(10, 20), (float)Random.Range(5, 9));
         timer.Restart();
         Time.timeScale = 1f;
+        SrM1HP.HP = Random.Range(0.1f, 0.15f);
+        //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
     }
@@ -80,6 +80,8 @@ public class levelManager : MonoBehaviour
         generateControl.Generrate((int)Random.Range(21, 31), (float)Random.Range(10, 14));
         timer.Restart();
         Time.timeScale = 1f;
+        SrM1HP.HP = Random.Range(0.05f, 0.1f); 
+        //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
     }
@@ -90,6 +92,8 @@ public class levelManager : MonoBehaviour
         generateControl.Generrate((int)Random.Range(32, 42), (float)Random.Range(15, 19));
         timer.Restart();
         Time.timeScale = 1f;
+        SrM1HP.HP = Random.Range(0.009f, 0.04f);
+        //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
     }
