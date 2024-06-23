@@ -34,7 +34,7 @@ public class updataNum : MonoBehaviour
 
     public void UpdateMark()
     {
-        Mark = Mark + 1;
+        Mark += 1;
     }
 
     public void ResetMark()

@@ -36,12 +36,16 @@ public class Menu : MonoBehaviour
     public void ExitGame()
     {
         Time.timeScale = 1f;
+        MenuUI.gameObject.SetActive(false);
+        fpsController.SetCursorVisibility(true);
         SceneManager.LoadScene("UI");
     }
 
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GetComponent<levelManager>().Reset();
+        MenuUI.gameObject.SetActive(false);
+        fpsController.SetCursorVisibility(true);
     }
 }

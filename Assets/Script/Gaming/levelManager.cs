@@ -47,17 +47,14 @@ public class levelManager : MonoBehaviour
         if (playerHP.GetHP() < 0.1)
         {
             timer.Stop();
-            GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
+            GetComponent<updataNum>().ResetMark();
             time += Time.deltaTime;
             LoseUI.alpha = time / fadeDuration;
 
             if (time > fadeDuration + 2f)
             {
                 LoseUI.alpha = 0;
-                SetPos();
-                SetEnemy();
-                timer.Restart();
-                playerHP.ResetHP();
+                Reset();
             }
         }
     }
@@ -128,5 +125,13 @@ public class levelManager : MonoBehaviour
         }
 
         generateControl.Generrate(GenerrateEnemy.Num, GenerrateEnemy.Speed);
+    }
+
+    public void Reset()
+    {
+        SetPos();
+        SetEnemy();
+        timer.Restart();
+        playerHP.ResetHP();
     }
 }
