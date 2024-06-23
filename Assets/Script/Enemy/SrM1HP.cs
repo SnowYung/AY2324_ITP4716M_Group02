@@ -16,7 +16,6 @@ public class SrM1HP : MonoBehaviour
         {
             GameObject.Find("Enermys").GetComponent<updataNum>().UpdateMark();
             Destroy(gameObject);
-           //GameObject.Find("FPSController").GetComponent<SrPlayerHP>().TransformA();
             
         }
     }

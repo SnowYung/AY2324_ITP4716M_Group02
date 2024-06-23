@@ -24,7 +24,7 @@ public class AudioGamingManager : MonoBehaviour
      public void StopMusic()
      {
         Audio.Stop();
-        Debug.Log("Stop");
+        //Debug.Log("Stop");
      }
 
 }

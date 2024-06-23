@@ -36,15 +36,4 @@ public class SrPlayerHP : MonoBehaviour
     {
         PlayerHP.fillAmount = 1;
     }
-
-    public void TransformA( )
-    {
-        //float x = gameObject.GetComponent<NewBehaviourScript>().transform.position.x;
-        //float y = gameObject.GetComponent<NewBehaviourScript>().transform.position.y;
-        //float z = gameObject.GetComponent<NewBehaviourScript>().transform.position.z;
-        //y = gameObject.GetComponent<NewBehaviourScript>().EndTP.y;
-        //Transform = GetComponent<Transform>();
-
-
-    }
 }

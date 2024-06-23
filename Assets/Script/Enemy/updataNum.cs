@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class updataNum : MonoBehaviour
 {
     int Mark = 0;
@@ -23,7 +24,7 @@ public class updataNum : MonoBehaviour
             timer += Time.deltaTime;
             WinUI.alpha = timer / fadeDuration;
 
-            GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
+            //GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
 
             if (timer > fadeDuration + 2f)
             {
