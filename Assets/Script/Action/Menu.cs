@@ -36,8 +36,7 @@ public class Menu : MonoBehaviour
     public void ExitGame()
     {
         Time.timeScale = 1f;
-        MenuUI.gameObject.SetActive(false);
-        fpsController.SetCursorVisibility(true);
+        fpsController.SetCursorVisibility(false);
         SceneManager.LoadScene("UI");
     }
 
