@@ -43,8 +43,6 @@ public class Menu : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        GetComponent<levelManager>().Reset();
-        MenuUI.gameObject.SetActive(false);
-        fpsController.SetCursorVisibility(true);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -47,7 +47,6 @@ public class levelManager : MonoBehaviour
         if (playerHP.GetHP() < 0.1)
         {
             timer.Stop();
-            GetComponent<updataNum>().ResetMark();
             time += Time.deltaTime;
             LoseUI.alpha = time / fadeDuration;
 
@@ -129,6 +128,7 @@ public class levelManager : MonoBehaviour
 
     public void Reset()
     {
+        GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
         SetPos();
         SetEnemy();
         timer.Restart();

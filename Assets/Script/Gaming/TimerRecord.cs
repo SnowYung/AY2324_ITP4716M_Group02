@@ -16,7 +16,6 @@ public class TimerRecord : MonoBehaviour
         GetComponent<Timer>().getTime();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (levelManager.GetLevel() == Level.Easy)

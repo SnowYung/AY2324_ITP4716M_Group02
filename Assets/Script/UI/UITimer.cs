@@ -28,6 +28,7 @@ public class UITimer : MonoBehaviour
         }
         else if (!nextButton.activeSelf)
         {
+            timer.gameObject.SetActive(false);
             nextButton.SetActive(true);
         }
     }
