@@ -65,6 +65,7 @@ public class levelManager : MonoBehaviour
         timer.Restart();
         Time.timeScale = 1f;
         SrM1HP.HP = Random.Range(0.1f, 0.15f);
+        SrPlayerHP.damage = Random.Range(0.1f, 0.2f);
         //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
@@ -76,7 +77,8 @@ public class levelManager : MonoBehaviour
         generateControl.Generrate((int)Random.Range(21, 31), (float)Random.Range(10, 14));
         timer.Restart();
         Time.timeScale = 1f;
-        SrM1HP.HP = Random.Range(0.05f, 0.1f); 
+        SrM1HP.HP = Random.Range(0.3f, 0.4f);
+        SrPlayerHP.damage = Random.Range(0.3f, 0.6f);
         //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
@@ -89,6 +91,7 @@ public class levelManager : MonoBehaviour
         timer.Restart();
         Time.timeScale = 1f;
         SrM1HP.HP = Random.Range(0.009f, 0.04f);
+        SrPlayerHP.damage = Random.Range(0.4f, 0.6f);
         //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);

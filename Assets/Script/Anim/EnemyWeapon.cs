@@ -9,7 +9,7 @@ public class EnemyWeapon : MonoBehaviour
     {
         if (Time.time >= nextDamageTime && target != null)
         {
-            target.TakeDamage(0.2f);
+            target.TakeDamage();
             nextDamageTime = Time.time + 1f;
         }
     }

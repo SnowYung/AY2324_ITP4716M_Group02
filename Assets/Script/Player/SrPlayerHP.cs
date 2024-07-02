@@ -5,6 +5,7 @@ public class SrPlayerHP : MonoBehaviour
 {
     public Image PlayerHP;
     public Transform Transform;
+    public static float damage;
     int x, y, z;
 
     //public void OnTriggerEnter(Collider other)
@@ -22,7 +23,7 @@ public class SrPlayerHP : MonoBehaviour
     //    GameObject.Find("Enermys").GetComponent<updataNum>().ResetMark();
     //}
 
-    public void TakeDamage(float damage)
+    public void TakeDamage()
     {
         PlayerHP.fillAmount -= damage;
     }
