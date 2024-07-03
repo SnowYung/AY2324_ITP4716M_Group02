@@ -13620,12 +13620,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1303219675}
   m_RootOrder: 0
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 1080}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &331063538
 CanvasGroup:
@@ -13659,7 +13658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 060a4c55980e20f468f50febed92fb97, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6aaab8c559194a14684797e92927b1a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -53502,7 +53501,6 @@ RectTransform:
   - {fileID: 1182761732}
   - {fileID: 1086045824}
   - {fileID: 1607850892}
-  - {fileID: 331063536}
   - {fileID: 1437604269}
   - {fileID: 1768577004}
   - {fileID: 939180663}
@@ -53566,7 +53564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed2e216796e0e84ca82fa71bedac2b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 331063539}
   HitRe: {fileID: 331063538}
 --- !u!1 &1307843103
 GameObject:

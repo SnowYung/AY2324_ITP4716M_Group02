@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HitReC : MonoBehaviour
 {
-    public Image image; 
     public CanvasGroup HitRe;
     float fadeDuration = 0.05f;
     float timer;
@@ -35,7 +34,9 @@ public class HitReC : MonoBehaviour
 
     public void show()
     {
-        if (showing)
+        if (HitRe.alpha > 0.1f)
+            return;
+        if (showing ) 
             return;
         timer += Time.deltaTime;
         HitRe.alpha = timer / fadeDuration;
@@ -49,6 +50,7 @@ public class HitReC : MonoBehaviour
     public void ResetShow()
     {
         HitRe.alpha = Restset;
+        timer = 0f;
     }
     public void Go()
     {
