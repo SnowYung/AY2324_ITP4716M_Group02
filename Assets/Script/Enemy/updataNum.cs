@@ -10,6 +10,7 @@ public class updataNum : MonoBehaviour
     public Timer gameplayTimer;
     float timer;
     float fadeDuration = 1f;
+    public TimerRecord timeRecord;
 
     public void Start()
     {
@@ -28,6 +29,7 @@ public class updataNum : MonoBehaviour
 
             if (timer > fadeDuration + 2f)
             {
+                timeRecord.GetTimeRecord();
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
             }
         }

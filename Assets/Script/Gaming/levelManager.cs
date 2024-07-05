@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public enum Level { Easy, Normal, Hard }
+public enum Level : int { Easy, Normal, Hard }
 public class levelManager : MonoBehaviour
 {
     public GameObject levelUI;

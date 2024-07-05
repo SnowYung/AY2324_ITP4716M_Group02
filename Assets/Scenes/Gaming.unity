@@ -21604,7 +21604,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 60}
-  m_SizeDelta: {x: 97, y: 78}
+  m_SizeDelta: {x: 95.28536, y: 77.816376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538999423
 MonoBehaviour:
@@ -25686,6 +25686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WinUI: {fileID: 1086045827}
   gameplayTimer: {fileID: 2119668906}
+  timeRecord: {fileID: 2112116813}
 --- !u!114 &612707921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34161,7 +34162,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -180}
-  m_SizeDelta: {x: 97, y: 78}
+  m_SizeDelta: {x: 95.28536, y: 77.816376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &843812558
 MonoBehaviour:
@@ -68736,7 +68737,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 97, y: 78}
+  m_SizeDelta: {x: 95.28536, y: 77.816376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711459524
 MonoBehaviour:
@@ -78657,7 +78658,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 180}
-  m_SizeDelta: {x: 97, y: 78}
+  m_SizeDelta: {x: 95.28536, y: 77.816376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965895368
 MonoBehaviour:
@@ -83447,7 +83448,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: 97, y: 78}
+  m_SizeDelta: {x: 95.28536, y: 77.816376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093486259
 MonoBehaviour:
@@ -84283,6 +84284,54 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &2112116812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112116814}
+  - component: {fileID: 2112116813}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2112116813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112116812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c16f8a29086e53140b580b3943b95c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easyRecords: []
+  normalRecords: []
+  hardRecords: []
+  currentLevel: 0
+  time: 0
+--- !u!4 &2112116814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112116812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.860699, y: -24.351315, z: -9.536072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2112689539
 GameObject:
   m_ObjectHideFlags: 0
