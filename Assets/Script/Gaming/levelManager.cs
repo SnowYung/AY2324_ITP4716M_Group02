@@ -50,8 +50,8 @@ public class levelManager : MonoBehaviour
 
             if (time > fadeDuration + 2f)
             {
-                LoseUI.alpha = 0;
                 Reset();
+                time = 0;
             }
         }
     }
@@ -134,5 +134,6 @@ public class levelManager : MonoBehaviour
         SetEnemy();
         timer.Restart();
         playerHP.ResetHP();
+        LoseUI.alpha = 0;
     }
 }
