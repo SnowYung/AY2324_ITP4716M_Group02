@@ -32,7 +32,11 @@ public class SrPlayerHP : MonoBehaviour
     {
         return PlayerHP.fillAmount;
     }
-
+    public void ADDHP()
+    {
+        PlayerHP.fillAmount += 0.1f;
+        Debug.Log("A");
+    }
     public void ResetHP()
     {
         PlayerHP.fillAmount = 1;
