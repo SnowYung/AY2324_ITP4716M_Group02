@@ -15,11 +15,13 @@ public class PlayADDHP : MonoBehaviour
     {
        
     }
-    //public void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.name == "PlayerWeapon")
-    //    {
-    //        GameObject.Find("FirstPersonCharacter").GetComponent<SrPlayerHP>().ADDHP();
-    //    }
-    //}
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "FPSController")
+        {
+            GameObject.Find("FPSController").GetComponent<SrPlayerHP>().ADDHP();
+            Destroy(gameObject);
+            GameObject.Find("Generrate").GetComponent<GenTotem>().Generrate();
+        }
+    }
 }

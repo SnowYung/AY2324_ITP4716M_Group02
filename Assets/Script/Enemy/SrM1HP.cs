@@ -27,7 +27,6 @@ public class SrM1HP : MonoBehaviour
             M1HP.fillAmount -= HP;
             GetComponent<EnemyAI>().TriggerSlow();
             //GetComponent<HitReC>().Go();
-            GameObject.Find("Canvas").GetComponent<HitReC>().Go();
 
         }
     }

@@ -26,6 +26,7 @@ public class SrPlayerHP : MonoBehaviour
     public void TakeDamage()
     {
         PlayerHP.fillAmount -= damage;
+        GameObject.Find("Canvas").GetComponent<HitReC>().Go();
     }
 
     public float GetHP()
@@ -35,7 +36,6 @@ public class SrPlayerHP : MonoBehaviour
     public void ADDHP()
     {
         PlayerHP.fillAmount += 0.1f;
-        Debug.Log("A");
     }
     public void ResetHP()
     {
