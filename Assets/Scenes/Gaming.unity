@@ -50468,7 +50468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aedd4c5f8a248dd4eaab9b79926f7a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totemPosition: {fileID: 7577828951488334383, guid: ab934e7eced1246419347684cac75ace, type: 3}
+  totemPosition: {fileID: 5166814953785993288, guid: 244aec60885c95746be2e48629b22c3f, type: 3}
   totemObj: {fileID: 1421354454}
   totem: {fileID: 0}
   layerMask:
@@ -73232,7 +73232,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 513
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 57192593827721943bccddb2e75ceeb1, type: 2}
   m_TargetDisplay: 0
@@ -75277,7 +75277,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294966783
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
