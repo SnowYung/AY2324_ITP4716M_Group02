@@ -31,12 +31,9 @@ public class TimerRecord : MonoBehaviour
     public Level currentLevel;
     public float time;
 
-    void Start()
+    private void Awake()
     {
         path = Path.Combine(System.Environment.CurrentDirectory, "List.txt");
-        Debug.Log(path);
-
-        currentLevel = levelManager.GetLevel();
 
         string result = File.ReadAllText(path);
         if (!string.IsNullOrWhiteSpace(result))
@@ -45,7 +42,11 @@ public class TimerRecord : MonoBehaviour
             normalRecords = JsonUtility.FromJson<BestRecord>(result).mnormalRecords;
             hardRecords = JsonUtility.FromJson<BestRecord>(result).mhardRecords;
         }
-        print(easyRecords.Count);
+    }
+
+    void Start()
+    {
+        currentLevel = levelManager.GetLevel();
     }
 
     [ContextMenu("GetTimeRecord")]
@@ -55,15 +56,15 @@ public class TimerRecord : MonoBehaviour
         {
             case Level.Easy:
                 easyRecords.Add(time);
-                easyRecords = easyRecords.OrderBy(o => o).ToList();
+                easyRecords = easyRecords.OrderBy(o => o).Take(5).ToList();
                 break;
             case Level.Normal:
                 normalRecords.Add(time);
-                normalRecords = normalRecords.OrderBy(o => o).ToList();
+                normalRecords = normalRecords.OrderBy(o => o).Take(5).ToList();
                 break;
             case Level.Hard:
                 hardRecords.Add(time);
-                hardRecords = hardRecords.OrderBy(o => o).ToList();
+                hardRecords = hardRecords.OrderBy(o => o).Take(5).ToList();
                 break;
         }
         BestRecord r = new BestRecord { measyRecords = easyRecords, mnormalRecords = normalRecords, mhardRecords = hardRecords };

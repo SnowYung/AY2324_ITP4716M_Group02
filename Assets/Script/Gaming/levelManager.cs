@@ -12,6 +12,7 @@ public class levelManager : MonoBehaviour
     public FirstPersonController fpsController;
     public GenerrateEnemy generateControl;
     public Timer timer;
+    public RecordList recordList;
 
     private SrPlayerHP playerHP;
 
@@ -67,6 +68,7 @@ public class levelManager : MonoBehaviour
         //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
+        recordList.ShowRecord(level);
     }
 
     public void Normal()
@@ -80,6 +82,7 @@ public class levelManager : MonoBehaviour
         //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
+        recordList.ShowRecord(level);
     }
 
     public void Hard()
@@ -93,6 +96,7 @@ public class levelManager : MonoBehaviour
         //Debug.Log(SrM1HP.HP);
         levelUI.gameObject.SetActive(false);
         fpsController.SetCursorVisibility(true);
+        recordList.ShowRecord(level);
     }
 
     public void Pos()
@@ -135,5 +139,6 @@ public class levelManager : MonoBehaviour
         timer.Restart();
         playerHP.ResetHP();
         LoseUI.alpha = 0;
+
     }
 }
