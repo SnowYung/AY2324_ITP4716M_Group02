@@ -28,15 +28,18 @@ public class TimerRecord : MonoBehaviour
     public List<float> normalRecords = new List<float>();
     public List<float> hardRecords = new List<float>();
 
+    public Timer timer;
+
     public Level currentLevel;
     public float time;
+
 
     private void Awake()
     {
         path = Path.Combine(System.Environment.CurrentDirectory, "List.txt");
 
         string result = File.ReadAllText(path);
-        if (!string.IsNullOrWhiteSpace(result))
+        if (!string.IsNullOrWhiteSpace(result) || string.IsNullOrWhiteSpace(result))
         {
             easyRecords = JsonUtility.FromJson<BestRecord>(result).measyRecords;
             normalRecords = JsonUtility.FromJson<BestRecord>(result).mnormalRecords;
@@ -52,6 +55,8 @@ public class TimerRecord : MonoBehaviour
     [ContextMenu("GetTimeRecord")]
     public void GetTimeRecord()
     {
+        time = timer.getTime();
+
         switch (currentLevel)
         {
             case Level.Easy:

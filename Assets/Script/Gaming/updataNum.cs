@@ -23,13 +23,13 @@ public class updataNum : MonoBehaviour
             gameplayTimer.Stop();
 
             timer += Time.deltaTime;
+            timeRecord.GetTimeRecord();
             WinUI.alpha = timer / fadeDuration;
 
             //GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
 
             if (timer > fadeDuration + 2f)
             {
-                timeRecord.GetTimeRecord();
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
             }
         }

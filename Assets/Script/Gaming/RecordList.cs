@@ -16,15 +16,15 @@ public class RecordList : MonoBehaviour
         {
             case Level.Easy:
                 for (int i = 0; i < Record.Count; i++)
-                    Record[i].text = timerRecord.easyRecords.Count > i ? timerRecord.easyRecords[i].ToString() : string.Empty;
+                    Record[i].text = timerRecord.easyRecords.Count > i ? timerRecord.easyRecords[i].ToString("00.00") : string.Empty;
                 break;
             case Level.Normal:
                 for (int i = 0; i < Record.Count; i++)
-                    Record[i].text = timerRecord.normalRecords.Count > i ? timerRecord.normalRecords[i].ToString() : string.Empty;
+                    Record[i].text = timerRecord.normalRecords.Count > i ? timerRecord.normalRecords[i].ToString("00.00") : string.Empty;
                 break;
             case Level.Hard:
                 for (int i = 0; i < Record.Count; i++)
-                    Record[i].text = timerRecord.hardRecords.Count > i ? timerRecord.hardRecords[i].ToString() : string.Empty;
+                    Record[i].text = timerRecord.hardRecords.Count > i ? timerRecord.hardRecords[i].ToString("00.00") : string.Empty;
                 break;
         }
     }
