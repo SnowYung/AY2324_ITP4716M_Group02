@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorControll : MonoBehaviour
 {
 
-    private Animator anim;
+    public Animator anim;
 
     public AudioClip DoorOpen;
 
@@ -13,7 +13,6 @@ public class DoorControll : MonoBehaviour
 
     void Start()
     {
-        anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
     }
 
@@ -21,7 +20,7 @@ public class DoorControll : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            anim.SetTrigger("Open");
+            anim.SetBool("isOpen", true);
             audio.PlayOneShot(DoorOpen);
             //Debug.Log(other.gameObject.name+" Open " + Time.time);
         }
@@ -31,7 +30,7 @@ public class DoorControll : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            anim.SetTrigger("Close");
+            anim.SetBool("isOpen", false);
             //Debug.Log("Close " + Time.time);
         }
     }

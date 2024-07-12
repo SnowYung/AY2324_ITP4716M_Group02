@@ -60,7 +60,7 @@ public class levelManager : MonoBehaviour
     public void Easy()
     {
         level = Level.Easy;
-        generateControl.Generrate(/*(int)Random.Range(10, 20), (float)Random.Range(5, 9)*/1,1);
+        generateControl.Generrate((int)Random.Range(10, 20), (float)Random.Range(5, 9));
         timer.Restart();
         Time.timeScale = 1f;
         SrM1HP.HP = Random.Range(0.1f, 0.15f);

@@ -11,6 +11,7 @@ public class updataNum : MonoBehaviour
     float timer;
     float fadeDuration = 1f;
     public TimerRecord timeRecord;
+    bool timeRecordCalled;
 
     public void Start()
     {
@@ -23,21 +24,24 @@ public class updataNum : MonoBehaviour
             gameplayTimer.Stop();
 
             timer += Time.deltaTime;
-            timeRecord.GetTimeRecord();
             WinUI.alpha = timer / fadeDuration;
 
             //GameObject.Find("Sound").GetComponent<AudioGamingManager>().StopMusic();
 
             if (timer > fadeDuration + 2f)
-            {
                 GameObject.Find("Enermys").GetComponent<NextGame>().UI();
-            }
         }
     }
 
     public void UpdateMark()
     {
         Mark += 1;
+
+        if (!timeRecordCalled && Mark == GenerrateEnemy.Num)
+        {
+            timeRecord.GetTimeRecord();
+            timeRecordCalled = true;
+        }
     }
 
     public void ResetMark()
