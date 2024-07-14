@@ -30,7 +30,7 @@ public class TimerRecord : MonoBehaviour
 
     public Timer timer;
 
-    public Level currentLevel;
+    public Level level;
     public float time;
 
 
@@ -47,9 +47,9 @@ public class TimerRecord : MonoBehaviour
         }
     }
 
-    void Start()
+    void Update()
     {
-        currentLevel = levelManager.GetLevel();
+        level = levelManager.GetLevel();
     }
 
     [ContextMenu("GetTimeRecord")]
@@ -57,7 +57,7 @@ public class TimerRecord : MonoBehaviour
     {
         time = timer.getTime();
 
-        switch (currentLevel)
+        switch (level)
         {
             case Level.Easy:
                 easyRecords.Add(time);
